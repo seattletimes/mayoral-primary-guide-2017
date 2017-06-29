@@ -1,18 +1,20 @@
 var Vue = require("vue");
 
-console.log(candidateData);
+var clone = function(obj) {
+  var o = {};
+  for (var k in obj) o[k] = obj[k];
+  return o;
+}
+
+var candidates = candidateData.map(o => Object.create(o));
 
 Vue.component("side-menu", {
   data: function() {
-    return { candidates: candidateData }
+    return { 
+      candidates,
+      questions: [],
+      mode: "candidates"
+    }
   },
-  template: `
-<nav class="side-menu">
-  <ul>
-    <li v-for="c in candidates">
-      <router-link :to="'/candidate/' + c.id">{{c.name}}</router-link>
-    </li>
-  </ul>
-</nav>
-  `
+  template: require("./_side-menu.html")
 })

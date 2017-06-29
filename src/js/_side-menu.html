@@ -1,0 +1,16 @@
+<nav class="side-menu">
+  <div class="modes">
+    <a @click="mode = 'candidates'">Candidates</a>
+    <a @click="mode = 'questions'">Questions</a>
+  </div>
+  <ul v-if="mode == 'candidates'">
+    <li v-for="c in candidates">
+      <router-link :to="'/candidate/' + c.id">{{c.name}}</router-link>
+    </li>
+  </ul>
+  <ul v-if="mode == 'questions'">
+    <li v-for="q in questions">
+      <router-link :to="'/question/' + q.index"{{q.text}}</router-link>
+    </li>
+  </ul>
+</nav>

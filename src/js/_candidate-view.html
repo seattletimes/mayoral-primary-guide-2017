@@ -1,0 +1,9 @@
+<div>
+  <h1>{{ candidate.name }}</h1>
+  <ul class="questions">
+    <li v-for="q in candidate.questions">
+      <div class="question">{{getQuestion(q.question).text}}</div>
+      <blockquote class="answer">{{q.answer}}</blockquote>
+    </li>
+  </ul>
+</div>
