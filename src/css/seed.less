@@ -1,0 +1,43 @@
+@import "seattletimes";
+
+[ng-cloak] { opacity: 0 }
+
+.app {
+  .display-flex();
+
+  .side-menu {
+    .flex(0 0 200px);
+    font-family: @df-sans;
+    font-size: 14px;
+
+    h2 {
+      font-size: 15px;
+    }
+
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+  }
+
+  .view-container {
+
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .question {
+      font-style: italic;
+      font-family: @df-sans;
+      font-size: 14px;
+    }
+
+    blockquote {
+      margin: 4px 0 24px;
+      font-size: 16px;
+    }
+  }
+}

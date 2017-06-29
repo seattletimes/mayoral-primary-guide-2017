@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <%= t.include("partials/_head.html", grunt.data.json) %>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+
+    <main class="app">
+      <side-menu></side-menu>
+      <router-view></router-view>
+    </main>
+
+    <script>
+<%
+// merge data together
+var blacklist = ["Timestamp"];
+var candidates = [];
+Object.keys(json.Candidates).forEach(function(k, i) {
+  var candidate = json.Candidates[k];
+  candidate.id = i;
+  candidate.name = k;
+  candidates.push(candidate);
+  var match = json.Edited.filter(s => s["What is your full name?"] == k).pop();
+  if (!match) return;
+  candidate.questions = [];
+  for (var q in match) {
+    if (blacklist.includes(q)) continue;
+    candidate.questions.push({ question: q, answer: match[q] });
+  }
+});
+%>
+window.candidateData = <%= JSON.stringify(candidates, null, 2) %>;
+    </script>
+
+    <script src="app.js" async></script>
+    <% if (json.project.production) { %>
+    <%= !json.project.embedded ? t.include("partials/_analytics.html") : "" %>
+    <%= t.include("partials/_workHere.html") %>
+    <% } %>
+  </body>
+</html>
