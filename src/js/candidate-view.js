@@ -1,21 +1,15 @@
 var Vue = require("vue");
 
-var lookup = {};
-window.candidateData.forEach(c => lookup[c.id] = c);
-
-console.log(lookup);
-
-var qLookup = {};
-window.questionData.forEach(q => qLookup[q.id] = q);
+var lookup = require("./lookups");
 
 var CandidateView = Vue.component("candidate-view", {
   computed: {
     candidate: function() {
-      return lookup[this.$route.params.id];
+      return lookup.candidate[this.$route.params.id];
     }
   },
   methods: {
-    getQuestion: id => qLookup[id]
+    getQuestion: id => lookup.question[id]
   },
   template: require("./_candidate-view.html")
 });

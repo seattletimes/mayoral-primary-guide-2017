@@ -37,7 +37,7 @@
     "jquery": "jquery/dist/jquery.min",
     "leaflet": "leaflet/dist/leaflet.js",
     "three": "three/three.min",
-    "vue": "vue/dist/vue",
+    "vue": "vue/dist/vue.min",
     "vue-router": "vue-router/dist/vue-router.min"
   },
   "browserify": {

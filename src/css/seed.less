@@ -10,6 +10,30 @@
     font-family: @df-sans;
     font-size: 14px;
 
+    .modes {
+      padding: 16px 0;
+
+      a {
+        cursor: pointer;
+
+        &.active {
+          font-weight: bold;
+        }
+      }
+    }
+
+    a {
+      color: @df-blue;
+
+      &:visited {
+        color: @df-blue;
+      }
+
+      &.router-link-active {
+        font-weight: bold;
+      }
+    }
+
     h2 {
       font-size: 15px;
     }
@@ -18,6 +42,10 @@
       list-style-type: none;
       margin: 0;
       padding: 0;
+    }
+
+    li {
+      margin-bottom: 4px;
     }
   }
 
@@ -29,15 +57,34 @@
       padding: 0;
     }
 
-    .question {
-      font-style: italic;
-      font-family: @df-sans;
-      font-size: 14px;
+    li {
+      margin-bottom: 8px;
     }
 
-    blockquote {
-      margin: 4px 0 24px;
-      font-size: 16px;
+    &.candidate-view {
+      .question {
+        font-style: italic;
+        font-family: @df-sans;
+        font-size: 14px;
+      }
+
+      blockquote {
+        margin: 4px 0 24px;
+        font-size: 16px;
+      }
     }
+
+    &.question-view {
+      .name {
+        display: inline;
+        font-weight: bold;
+      }
+
+      .answer {
+        display: inline;
+        font-style: italic;
+      }
+    }
+    
   }
 }

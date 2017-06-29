@@ -7,8 +7,8 @@
   <body>
 
     <main class="app">
-      <side-menu></side-menu>
-      <router-view class="view-container"></router-view>
+      <side-menu :candidates="candidates" :questions="questions"></side-menu>
+      <router-view class="view-container" :candidates="candidates"></router-view>
     </main>
 
     <script>
@@ -24,6 +24,7 @@ Object.keys(json.Candidates).forEach(function(k, i) {
   if (!match) return;
   candidate.questions = json.Questions.map(q => ({ question: q.id, answer: match[q.id] }));
 });
+
 %>
 window.candidateData = <%= JSON.stringify(candidates) %>;
 window.questionData = <%= JSON.stringify(json.Questions) %>;

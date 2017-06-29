@@ -1,19 +1,15 @@
 var Vue = require("vue");
 
-var clone = function(obj) {
-  var o = {};
-  for (var k in obj) o[k] = obj[k];
-  return o;
-}
-
-var candidates = candidateData.map(o => Object.create(o));
-
 Vue.component("side-menu", {
+  props: ["candidates", "questions"],
   data: function() {
-    return { 
-      candidates,
-      questions: [],
-      mode: "candidates"
+    return {
+      mode: window.location.hash.indexOf("question") > -1 ? "questions" : "candidates"
+    }
+  },
+  computed: {
+    featured: function() {
+      return this.questions.filter(q => q.standalone);
     }
   },
   template: require("./_side-menu.html")
