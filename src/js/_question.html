@@ -6,10 +6,10 @@
   <ul class="candidate-answers">
     <% data.candidates.forEach(function(c) { %>
     <li>
-      <div class="meta">
+      <a class="meta" href="#/candidates/<%= c.id %>">
         <img src="./assets/mugs/<%= c.mug %>" class="mug">
         <b class="name"><%= c.name %></b>
-      </div>
+      </a>
       <blockquote><%= c.questions[data.id] || "No response" %></blockquote>
     <% }); %>
   </ul>

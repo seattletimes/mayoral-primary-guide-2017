@@ -8,7 +8,6 @@
 
 nav.tab-group {
   .display-flex();
-  .justify-content(center);
   font-family: @df-sans;
 
   a {
@@ -20,7 +19,9 @@ nav.tab-group {
       color: @df-blue;
     }
 
-    &.active {
+    &.active,
+    [data-view="candidate"] &.candidates,
+    [data-view="question"] &.questions {
       font-weight: bold;
       border-bottom: 3px solid @df-blue;
     }

@@ -28,8 +28,9 @@ Object.keys(json.Candidates).forEach(function(k, i) {
 
       <main>
         <nav class="tab-group">
-          <a href="#/candidates">Candidates</a>
-          <a href="#/questions">Questions</a>
+          <a href="#/candidates" class="candidates">Candidates</a>
+          <a href="#/questions" class="questions">Questions</a>
+          <a href="#/about" class="about">About</a>
         </nav>
         <div class="view-container">
           <%= t.include("js/_candidate-chooser.html", { data: { candidates }}) %>

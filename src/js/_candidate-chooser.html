@@ -1,8 +1,8 @@
 <div class="candidate-chooser">
   <% data.candidates.forEach(function(c) { %>
   <div class="candidate">
-    <img class="mug" src="<%= c.mug ? "./assets/mugs/" + c.mug : "./assets/grump.jpg" %>">
     <a class="name" href="#/candidates/<%= c.id %>">
+      <img class="mug" src="<%= c.mug ? "./assets/mugs/" + c.mug : "./assets/grump.jpg" %>">
       <%= c.name %>
     </a>
   </div>

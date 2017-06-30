@@ -21,28 +21,26 @@ var lookup = {
 window.candidateData.forEach(c => lookup.candidate[c.id] = c);
 window.questionData.forEach(q => lookup.question[q.id] = q.text);
 
+var setViewAttr = v => document.body.setAttribute("data-view", v);
+
 router.onhit = function(e) {
-  var matcher = new RegExp(`^#!?/?${e.url}/?`);
-  $("a").forEach(function(a) {
-    var href = a.getAttribute("href");
-    if (matcher.test(href)) {
-      a.classList.add("active");
-    } else {
-      a.classList.remove("active");
-    }
-  });
+  var containerBounds = viewContainer.getBoundingClientRect();
+  if (containerBounds.top < 0) viewContainer.scrollIntoView();
 }
 
 router.add("candidates", function() {
+  setViewAttr("candidate-list");
   viewContainer.innerHTML = templates.candidateChooser({ candidates: window.candidateData });
 });
 
 router.add("questions", function() {
+  setViewAttr("question-list");
   var questions = window.questionData.filter(q => q.standalone);
   viewContainer.innerHTML = templates.questionChooser({ questions });
 });
 
 router.add("candidates/:id", function(e) {
+  setViewAttr("candidate");
   var candidate = lookup.candidate[e.params.id];
   viewContainer.innerHTML = templates.candidate({
     candidate,
@@ -52,6 +50,7 @@ router.add("candidates/:id", function(e) {
 });
 
 router.add("question/:id", function(e) {
+  setViewAttr("question");
   var id = e.params.id;
   var question = lookup.question[id];
   var candidates = window.candidateData;

@@ -10,7 +10,7 @@
     <% data.questions.forEach(function(q) { %>
     <li class="<%= q.standalone ? "detailed" : "brief" %>">
       <div class="question"><%= q.text %></div>
-      <blockquote><%= data.candidate.questions[q.id] %></blockquote>
+      <blockquote><%= data.candidate.questions[q.id] || "<i>No response given</i>" %></blockquote>
     <% }); %>
   </ul>
 </div>

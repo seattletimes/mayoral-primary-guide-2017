@@ -4,6 +4,8 @@ A simple HTML hashbang router with basic param support
 
 */
 
+var $ = require("./lib/qsa");
+
 var Router = function(broadcast) {
   this.routes = [];
   window.addEventListener("hashchange", this.onHashUpdate.bind(this));
@@ -13,6 +15,7 @@ var Router = function(broadcast) {
 Router.prototype = {
   onHashUpdate() {
     var url = this.extractPath();
+    this.activateLinks(url);
     for (var i = 0; i < this.routes.length; i++) {
       var route = this.routes[i];
       if (route.re.test(url)) {
@@ -52,6 +55,17 @@ Router.prototype = {
   },
   extractPath() {
     return window.location.hash.replace(/^#!?/, "");
+  },
+  activateLinks(url) {
+    var matcher = new RegExp(`^#!?/?${url}/?$`);
+    $("a").forEach(function(a) {
+      var href = a.getAttribute("href");
+      if (url && matcher.test(href)) {
+        a.classList.add("active");
+      } else {
+        a.classList.remove("active");
+      }
+    });
   }
 }
 
