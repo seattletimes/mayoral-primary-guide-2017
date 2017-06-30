@@ -14,7 +14,8 @@ var Router = function(broadcast) {
 
 Router.prototype = {
   onHashUpdate() {
-    var url = this.extractPath();
+    var url = this.normalizePath(window.location.hash);
+    if (!url) return;
     this.activateLinks(url);
     for (var i = 0; i < this.routes.length; i++) {
       var route = this.routes[i];
@@ -27,10 +28,12 @@ Router.prototype = {
     }
     this.onmiss(url);
   },
+  // catch-all event handlers
   onmiss(url) { console.log(`No matching route found for "${url}"`) },
   onhit(e) { console.log(e) },
+  // paths should not split on 
   add(path, callback) {
-    var segments = path.split("/");
+    var segments = this.normalizePath(path).split("/");
     var names = [];
     var converted = segments.map(function(segment) {
       if (segment[0] == ":") {
@@ -53,8 +56,8 @@ Router.prototype = {
     this.routes.push(route);
     return route;
   },
-  extractPath() {
-    return window.location.hash.replace(/^#!?/, "");
+  normalizePath(p) {
+    return p.replace(/^\/|^#!?\/?|\/$/g, "");
   },
   activateLinks(url) {
     var matcher = new RegExp(`^#!?/?${url}/?$`);

@@ -28,18 +28,18 @@ router.onhit = function(e) {
   if (containerBounds.top < 0) viewContainer.scrollIntoView();
 }
 
-router.add("candidates", function() {
+router.add("/candidates", function() {
   setViewAttr("candidate-list");
   viewContainer.innerHTML = templates.candidateChooser({ candidates: window.candidateData });
 });
 
-router.add("questions", function() {
+router.add("/questions", function() {
   setViewAttr("question-list");
   var questions = window.questionData.filter(q => q.standalone);
   viewContainer.innerHTML = templates.questionChooser({ questions });
 });
 
-router.add("candidates/:id", function(e) {
+router.add("/candidates/:id", function(e) {
   setViewAttr("candidate");
   var candidate = lookup.candidate[e.params.id];
   viewContainer.innerHTML = templates.candidate({
@@ -49,10 +49,12 @@ router.add("candidates/:id", function(e) {
   });
 });
 
-router.add("question/:id", function(e) {
+router.add("/question/:id", function(e) {
   setViewAttr("question");
   var id = e.params.id;
   var question = lookup.question[id];
   var candidates = window.candidateData;
   viewContainer.innerHTML = templates.question({ id, question, candidates });
 });
+
+router.add("/about", e => viewContainer.innerHTML = "This space intentionally left blank.");
