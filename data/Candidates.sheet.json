@@ -1,65 +1,86 @@
 {
-  "Gary Brose": {
+  "brose": {
+    "name": "Gary Brose",
     "summary": "Ballard entrepreneur who says city has waged war on cars by remaking roads for buses and bikes. Says small businesses are too burdened with taxes and regulations."
   },
-  "Casey Carlisle": {
+  "carlisle": {
+    "name": "Casey Carlisle",
     "summary": "Libertarian with military background. Says city leaders have been fiscally irresponsible and other candidates are Ed Murray clones."
   },
-  "Tiniell Cato": {
+  "cato": {
+    "name": "Tiniell Cato",
     "summary": "Grant-writing and business consultant. Says government discriminates against people based on race and income."
   },
-  "Jenny Durkan": {
+  "durkan": {
+    "name": "Jenny Durkan",
     "summary": "Appointed by President Barack Obama, she was the first openly gay U.S. attorney. Has support from old-guard Democrats and business community."
   },
-  "Jessyn Farrell": {
+  "farrell": {
+    "name": "Jessyn Farrell",
     "summary": "Urbanist who resigned from a statehouse seat to focus on her mayoral campaign. Stressing her legislative experience and reaching out to other working parents."
   },
-  "Thom Gunn": {
+  "gunn": {
+    "name": "Thom Gunn",
     "summary": "Writer and former Whidbey Island restaurant owner who was once president of the Associated Students of the University of Washington."
   },
-  "Michael Harris": {
+  "harris": {
+    "name": "Michael Harris",
     "summary": "Video journalist and wildlife conservationist who ran a trade group for whale-watching businesses. Says city politics have veered too far left."
   },
-  "Greg Hamilton": {
+  "hamilton": {
+    "name": "Greg Hamilton",
     "summary": "Owner of a sustainable-agriculture company who served in the military. Says city’s culture is under threat from special interests and identity politics."
   },
-  "Bob Hasegawa": {
+  "hasegawa": {
+    "name": "Bob Hasegawa",
     "summary": "State senator from Beacon Hill is an old-school labor leader who came up through the Teamsters. Says a municipal bank would help with many urban problems."
   },
-  "Lewis A. Jones": {
+  "jones": {
+    "name": "Lewis A. Jones",
     "summary": "Ballard Republican and former commercial fisherman with a tree-topping and lawn-mowing business. Has concerns about health effects of cellphones and says women should be trained to use firearms for safety."
   },
-  "Dave Kane": {
+  "kane": {
+    "name": "Dave Kane",
     "summary": "Belltown resident and programmer who customized a DeLorean DMC-12 to look like the car from the “Back to the Future” movies."
   },
-  "Harley Lever": {
+  "lever": {
+    "name": "Harley Lever",
     "summary": "Founder of Safe Seattle, a group of home and business owners with concerns about street homelessness in neighborhoods. Says he’d use technology to improve government."
   },
-  "Mary J. Martin": {
+  "martin": {
+    "name": "Mary J. Martin",
     "summary": "Socialist Workers Party candidate who also ran for governor in 2012 and 2016 and for mayor in 2013. Longtime factory worker."
   },
-  "Mike McGinn": {
+  "mcginn": {
+    "name": "Mike McGinn",
     "summary": "Former mayor unseated in 2013 by Ed Murray. Says he’d review budget, tax big businesses, focus on basics and try to speed up the construction of light rail."
   },
-  "Cary Moon": {
+  "moon": {
+    "name": "Cary Moon",
     "summary": "Urban planner who led opposition to the Alaskan Way Viaduct replacement tunnel. Calling for a crackdown on real-estate speculators, and helping to fund her own campaign."
   },
-  "James W. Norton Jr.": {
+  "norton": {
+    "name": "James W. Norton Jr.",
     "summary": "Seattle police officer who says there should be more dialogue between cops and community members. Former veterinary technician and owner of a dog-walking business."
   },
-  "Larry Oberto": {
+  "oberto": {
+    "name": "Larry Oberto",
     "summary": "Member of Seattle’s Oberto Sausage Company family who’s served as sports-marketing director for the company. Has been involved in hydroplane and car racing."
   },
-  "Nikkita Oliver": {
+  "oliver": {
+    "name": "Nikkita Oliver",
     "summary": "Educator, attorney, artist and activist. Says she’d fight displacement, halt property-tax hikes and be voice for poor people, young people and people of color."
   },
-  "Jason Roberts": {
+  "roberts": {
+    "name": "Jason Roberts",
     "summary": "Business owner and consultant. Advocates free rehabilitation services for people struggling with drug addiction."
   },
-  "Alex Tsimerman": {
+  "tsimerman": {
+    "name": "Alex Tsimerman",
     "summary": "Frequent candidate who regularly delivers profane testimony at City Council meetings and rails against fascism."
   },
-  "Keith J. Whiteman": {
+  "whiteman": {
+    "name": "Keith J. Whiteman",
     "summary": "Rock drummer who says he’d listen to experts. Says he’d ban the Confederate flag and tax big businesses."
   }
 }
