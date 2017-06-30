@@ -6,9 +6,10 @@ A simple HTML hashbang router with basic param support
 
 var $ = require("./lib/qsa");
 
-var Router = function(broadcast) {
+var Router = function() {
   this.routes = [];
   window.addEventListener("hashchange", this.onHashUpdate.bind(this));
+  //update after routes have a chance to be registered
   requestAnimationFrame(() => this.onHashUpdate());
 };
 
@@ -31,7 +32,7 @@ Router.prototype = {
   // catch-all event handlers
   onmiss(url) { console.log(`No matching route found for "${url}"`) },
   onhit(e) { console.log(e) },
-  // paths should not split on 
+  // paths may include parameters, such as /constant/:param/constant
   add(path, callback) {
     var segments = this.normalizePath(path).split("/");
     var names = [];
@@ -56,14 +57,16 @@ Router.prototype = {
     this.routes.push(route);
     return route;
   },
+  //removes trailing slashes, opening slashes, and hashbangs
   normalizePath(p) {
     return p.replace(/^\/|^#!?\/?|\/$/g, "");
   },
+  //any link matching the current hash is set as "active"
   activateLinks(url) {
     var matcher = new RegExp(`^#!?/?${url}/?$`);
     $("a").forEach(function(a) {
       var href = a.getAttribute("href");
-      if (url && matcher.test(href)) {
+      if (matcher.test(href)) {
         a.classList.add("active");
       } else {
         a.classList.remove("active");
