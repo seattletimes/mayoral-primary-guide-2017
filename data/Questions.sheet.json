@@ -93,43 +93,35 @@
   },
   {
     "id": "first_cut",
-    "text": "Which city department or office should first have its budget cut, if any?",
-    "standalone": "x"
+    "text": "Which city department or office should first have its budget cut, if any?"
   },
   {
     "id": "first_boost",
-    "text": "Which city department or office should first having its budget increased, if any?",
-    "standalone": "x"
+    "text": "Which city department or office should first having its budget increased, if any?"
   },
   {
     "id": "retain_otoole",
-    "text": "Would you retain Kathleen O'Toole as police chief?",
-    "standalone": "x"
+    "text": "Would you retain Kathleen O'Toole as police chief?"
   },
   {
     "id": "grow_spd",
-    "text": "Should the city continue to grow its number of police officers?",
-    "standalone": "x"
+    "text": "Should the city continue to grow its number of police officers?"
   },
   {
     "id": "arena_location",
-    "text": "Where should a new sports/entertainment arena be built?",
-    "standalone": "x"
+    "text": "Where should a new sports/entertainment arena be built?"
   },
   {
     "id": "courthouse",
-    "text": "Should King County move ahead with its existing plan to build a new juvenile courthouse and detention center in Seattle?",
-    "standalone": "x"
+    "text": "Should King County move ahead with its existing plan to build a new juvenile courthouse and detention center in Seattle?"
   },
   {
     "id": "injection_site",
-    "text": "Should Seattle and King County open a safe-injection site in the city?",
-    "standalone": "x"
+    "text": "Should Seattle and King County open a safe-injection site in the city?"
   },
   {
     "id": "campaign_tweet",
-    "text": "Sum up your campaign in a tweet -- no more than 140 characters",
-    "standalone": "x"
+    "text": "Sum up your campaign in a tweet -- no more than 140 characters"
   },
   {
     "id": "affordable_housing",
