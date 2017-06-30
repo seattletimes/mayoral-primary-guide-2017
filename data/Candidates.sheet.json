@@ -1,10 +1,12 @@
 {
   "brose": {
     "name": "Gary Brose",
+    "mug": "brose.jpg",
     "summary": "Ballard entrepreneur who says city has waged war on cars by remaking roads for buses and bikes. Says small businesses are too burdened with taxes and regulations."
   },
   "carlisle": {
     "name": "Casey Carlisle",
+    "mug": "carlisle.jpg",
     "summary": "Libertarian with military background. Says city leaders have been fiscally irresponsible and other candidates are Ed Murray clones."
   },
   "cato": {
@@ -13,18 +15,22 @@
   },
   "durkan": {
     "name": "Jenny Durkan",
+    "mug": "durkan.jpg",
     "summary": "Appointed by President Barack Obama, she was the first openly gay U.S. attorney. Has support from old-guard Democrats and business community."
   },
   "farrell": {
     "name": "Jessyn Farrell",
+    "mug": "farrell.jpg",
     "summary": "Urbanist who resigned from a statehouse seat to focus on her mayoral campaign. Stressing her legislative experience and reaching out to other working parents."
   },
   "gunn": {
     "name": "Thom Gunn",
+    "mug": "gunn.jpg",
     "summary": "Writer and former Whidbey Island restaurant owner who was once president of the Associated Students of the University of Washington."
   },
   "harris": {
     "name": "Michael Harris",
+    "mug": "harris.jpg",
     "summary": "Video journalist and wildlife conservationist who ran a trade group for whale-watching businesses. Says city politics have veered too far left."
   },
   "hamilton": {
@@ -33,10 +39,12 @@
   },
   "hasegawa": {
     "name": "Bob Hasegawa",
+    "mug": "hasegawa.jpg",
     "summary": "State senator from Beacon Hill is an old-school labor leader who came up through the Teamsters. Says a municipal bank would help with many urban problems."
   },
   "jones": {
     "name": "Lewis A. Jones",
+    "mug": "jones.jpg",
     "summary": "Ballard Republican and former commercial fisherman with a tree-topping and lawn-mowing business. Has concerns about health effects of cellphones and says women should be trained to use firearms for safety."
   },
   "kane": {
@@ -45,6 +53,7 @@
   },
   "lever": {
     "name": "Harley Lever",
+    "mug": "lever.jpg",
     "summary": "Founder of Safe Seattle, a group of home and business owners with concerns about street homelessness in neighborhoods. Says he’d use technology to improve government."
   },
   "martin": {
@@ -65,14 +74,17 @@
   },
   "oberto": {
     "name": "Larry Oberto",
+    "mug": "oberto.jpg",
     "summary": "Member of Seattle’s Oberto Sausage Company family who’s served as sports-marketing director for the company. Has been involved in hydroplane and car racing."
   },
   "oliver": {
     "name": "Nikkita Oliver",
+    "mug": "oliver.jpg",
     "summary": "Educator, attorney, artist and activist. Says she’d fight displacement, halt property-tax hikes and be voice for poor people, young people and people of color."
   },
   "roberts": {
     "name": "Jason Roberts",
+    "mug": "roberts.jpg",
     "summary": "Business owner and consultant. Advocates free rehabilitation services for people struggling with drug addiction."
   },
   "tsimerman": {

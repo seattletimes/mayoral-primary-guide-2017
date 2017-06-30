@@ -1,0 +1,10 @@
+<div class="question-view">
+  <h1><%= data.question %></h1>
+  <ul class="candidates-answers">
+    <% data.candidates.forEach(function(c) { %>
+    <li>
+      <b class="name"><%= c.name %>:</b>
+        <%= c.questions[data.id] || "No response" %>
+    <% }); %>
+  </ul>
+</div>

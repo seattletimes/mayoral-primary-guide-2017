@@ -44,7 +44,16 @@ router.add("questions", function() {
 
 router.add("candidates/:id", function(e) {
   var candidate = lookup.candidate[e.params.id];
-  console.log(candidate);
-  viewContainer.innerHTML = templates.candidate({ candidate, questions: lookup.question });
+  viewContainer.innerHTML = templates.candidate({
+    candidate,
+    questions: window.questionData,
+    qLookup: lookup.question
+  });
 });
-router.add("question/:id", p => console.log("question", p));
+
+router.add("question/:id", function(e) {
+  var id = e.params.id;
+  var question = lookup.question[id];
+  var candidates = window.candidateData;
+  viewContainer.innerHTML = templates.question({ id, question, candidates });
+});

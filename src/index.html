@@ -1,4 +1,14 @@
-<!doctype html>
+<%
+// merge data together
+var candidates = [];
+Object.keys(json.Candidates).forEach(function(k, i) {
+  var candidate = json.Candidates[k];
+  candidate.id = k;
+  candidates.push(candidate);
+  candidate.questions = json.Edited[k] || {};
+});
+
+%><!doctype html>
 <html lang="en-US">
   <head>
     <%= t.include("partials/_head.html", grunt.data.json) %>
@@ -22,7 +32,7 @@
           <a href="#/questions">Questions</a>
         </nav>
         <div class="view-container">
-
+          <%= t.include("js/_candidate-chooser.html", { data: { candidates }}) %>
         </div>
       </main>
 
@@ -31,19 +41,6 @@
     <%= t.include("partials/_navBottom.html") %>
 
     <script>
-<%
-// merge data together
-var candidates = [];
-Object.keys(json.Candidates).forEach(function(k, i) {
-  var candidate = json.Candidates[k];
-  candidate.id = k;
-  candidates.push(candidate);
-  var match = json.Edited[k];
-  if (!match) return;
-  candidate.questions = json.Questions.map(q => ({ question: q.id, answer: match[q.id] }));
-});
-
-%>
 window.candidateData = <%= JSON.stringify(candidates) %>;
 window.questionData = <%= JSON.stringify(json.Questions) %>;
     </script>
