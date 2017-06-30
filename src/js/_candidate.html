@@ -1,0 +1,10 @@
+<div class="candidate-view">
+  <h1><%= data.candidate.name %></h1>
+  <ul class="q-and-a">
+    <% data.candidate.questions.forEach(function(q) { %>
+    <li>
+      <%= data.questions[q.question] %>
+      <blockquote><%= q.answer %></blockquote>
+    <% }); %>
+  </ul>
+</div>

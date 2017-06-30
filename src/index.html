@@ -6,10 +6,29 @@
   </head>
   <body>
 
-    <main class="app">
-      <side-menu :candidates="candidates" :questions="questions"></side-menu>
-      <router-view class="view-container" :candidates="candidates"></router-view>
-    </main>
+    <%= t.include("partials/_nav.html") %>
+
+    <%= t.include("partials/_ad.html", { type: "banner" }) %>
+
+    <div class="constraint">
+
+      <header>
+        <h1>Mayoral primary guide</h1>
+      </header>
+
+      <main>
+        <nav class="tab-group">
+          <a href="#/candidates">Candidates</a>
+          <a href="#/questions">Questions</a>
+        </nav>
+        <div class="view-container">
+
+        </div>
+      </main>
+
+    </div>
+
+    <%= t.include("partials/_navBottom.html") %>
 
     <script>
 <%

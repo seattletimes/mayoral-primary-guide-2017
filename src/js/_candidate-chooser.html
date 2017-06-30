@@ -1,0 +1,10 @@
+<div class="candidate-chooser">
+  <% data.candidates.forEach(function(c) { %>
+  <div class="candidate">
+    <img class="mug" src="./assets/grump.jpg">
+    <a class="name" href="#/candidates/<%= c.id %>">
+      <%= c.name %>
+    </a>
+  </div>
+  <% }); %>
+</div>

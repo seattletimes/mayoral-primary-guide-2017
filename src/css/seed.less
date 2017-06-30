@@ -1,90 +1,60 @@
 @import "seattletimes";
 
-[ng-cloak] { opacity: 0 }
+.constraint {
+  max-width: 960px;
+  margin: auto;
+  padding: 16px;
+}
 
-.app {
+nav.tab-group {
   .display-flex();
+  .justify-content(center);
+  font-family: @df-sans;
 
-  .side-menu {
-    .flex(0 0 200px);
-    font-family: @df-sans;
-    font-size: 14px;
+  a {
+    display: block;
+    padding: 8px 16px;
+    margin: 0;
+    border-bottom: 1px solid @df-blue;
 
-    .modes {
-      padding: 16px 0;
-
-      a {
-        cursor: pointer;
-
-        &.active {
-          font-weight: bold;
-        }
-      }
-    }
-
-    a {
+    &:visited {
       color: @df-blue;
-
-      &:visited {
-        color: @df-blue;
-      }
-
-      &.router-link-active {
-        font-weight: bold;
-      }
     }
 
-    h2 {
-      font-size: 15px;
-    }
-
-    ul {
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-    }
-
-    li {
-      margin-bottom: 4px;
+    &.active {
+      font-weight: bold;
+      border-bottom: 3px solid @df-blue;
     }
   }
+}
 
-  .view-container {
+.candidate-chooser {
+  .display-flex();
+  .flex-wrap(wrap);
 
-    ul {
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-    }
+  .candidate {
+    .flex(0 0 percentage(1 / 6));
+    text-align: center;
+    padding: 20px;
+    font-family: @df-sans;
+  }
 
-    li {
-      margin-bottom: 8px;
-    }
+  .mug {
+    border: 1px solid white;
+    border-radius: 100%;
+    display: block;
+    margin: auto;
+    box-shadow: 0 3px 8px fade(black, 10%), 0 8px 16px fade(black, 12%);
+  }
+}
 
-    &.candidate-view {
-      .question {
-        font-style: italic;
-        font-family: @df-sans;
-        font-size: 14px;
-      }
+.question-chooser {
+  .display-flex();
+  .flex-wrap(wrap);
 
-      blockquote {
-        margin: 4px 0 24px;
-        font-size: 16px;
-      }
-    }
-
-    &.question-view {
-      .name {
-        display: inline;
-        font-weight: bold;
-      }
-
-      .answer {
-        display: inline;
-        font-style: italic;
-      }
-    }
-    
+  .question {
+    .flex(0 0 33.3%);
+    padding: 20px;
+    text-align: center;
   }
 }
