@@ -14,9 +14,14 @@ nav.tab-group {
     display: block;
     padding: 8px 16px;
     margin: 0;
+    transition: .2s;
 
     &:visited {
       color: @df-blue;
+    }
+
+    &:hover {
+      color: darken(@df-blue, 10%);
     }
 
     &.active,
@@ -31,7 +36,7 @@ nav.tab-group {
 nav.breadcrumb {
   font-family: @df-sans;
   display: block;
-  // background: @df-blue;
+  background: @df-blue;
   font-size: 14px;
   border-top: 2px solid @df-blue;
 
@@ -39,11 +44,13 @@ nav.breadcrumb {
     display: inline-block;
     padding: 8px;
     text-transform: uppercase;
-    color: @df-blue;
+    color: white;
+    background: @df-blue;
+    transition: .2s;
   }
 
   a:hover, a:focus {
-    background: desaturate(@df-blue, 20%);
+    background: darken(@df-blue, 10%);
     color: white;
   }
 }
