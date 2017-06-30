@@ -15,7 +15,6 @@ nav.tab-group {
     display: block;
     padding: 8px 16px;
     margin: 0;
-    border-bottom: 1px solid @df-blue;
 
     &:visited {
       color: @df-blue;
@@ -25,6 +24,38 @@ nav.tab-group {
       font-weight: bold;
       border-bottom: 3px solid @df-blue;
     }
+  }
+}
+
+nav.breadcrumb {
+  font-family: @df-sans;
+  display: block;
+  // background: @df-blue;
+  font-size: 14px;
+  border-top: 2px solid @df-blue;
+
+  a, a:visited {
+    display: inline-block;
+    padding: 8px;
+    text-transform: uppercase;
+    color: @df-blue;
+  }
+
+  a:hover, a:focus {
+    background: desaturate(@df-blue, 20%);
+    color: white;
+  }
+}
+
+.mug {
+  border-radius: 100%;
+  box-shadow: 0 3px 8px fade(black, 10%), 0 8px 16px fade(black, 12%);
+
+  &[src*="undefined"] {
+    background: black;
+    width: 158px;
+    height: 158px;
+    border: 1px solid red;
   }
 }
 
@@ -48,6 +79,43 @@ nav.tab-group {
   }
 }
 
+.candidate-view {
+  .header {
+    // overflow: hidden;
+  }
+
+
+
+  ul.q-and-a {
+    list-style-type: none;
+    .display-flex();
+    .flex-wrap(wrap);
+    margin: 0;
+    padding: 0;
+
+    li {
+      margin-bottom: 16px;
+      .flex(0 0 50%);
+      padding: 0 16px 0 0;
+
+      &.detailed {
+        .flex(0 0 100%);
+      }
+    }
+
+    .question {
+      font-weight: bold;
+      font-style: italic;
+      font-family: @df-sans;
+      font-size: 16px;
+    }
+
+    blockquote {
+      margin: 0;
+    }
+  }
+}
+
 .question-chooser {
   .display-flex();
   .flex-wrap(wrap);
@@ -56,5 +124,36 @@ nav.tab-group {
     .flex(0 0 33.3%);
     padding: 20px;
     text-align: center;
+  }
+}
+
+.question-view {
+
+  .candidate-answers {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+      .display-flex();
+      margin-bottom: 16px;
+    }
+
+    .meta {
+      padding-right: 16px;
+      text-align: center;
+      .flex(0 0 160px);
+    }
+
+    b.name {
+      font-weight: normal;
+      display: block;
+      font-family: @df-sans;
+      font-size: 16px;
+    }
+
+    blockquote {
+      margin: 0;
+    }
   }
 }

@@ -1,10 +1,16 @@
 <div class="question-view">
+  <nav class="breadcrumb">
+    <a href="#/questions">&laquo; Back to questions</a>
+  </nav>
   <h1><%= data.question %></h1>
-  <ul class="candidates-answers">
+  <ul class="candidate-answers">
     <% data.candidates.forEach(function(c) { %>
     <li>
-      <b class="name"><%= c.name %>:</b>
-        <%= c.questions[data.id] || "No response" %>
+      <div class="meta">
+        <img src="./assets/mugs/<%= c.mug %>" class="mug">
+        <b class="name"><%= c.name %></b>
+      </div>
+      <blockquote><%= c.questions[data.id] || "No response" %></blockquote>
     <% }); %>
   </ul>
 </div>

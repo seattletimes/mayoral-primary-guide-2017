@@ -1,9 +1,15 @@
 <div class="candidate-view">
-  <h1><%= data.candidate.name %></h1>
+  <nav class="breadcrumb">
+    <a href="#/candidates">&laquo; Back to candidates</a>
+  </nav>
+  <div class="header">
+    <h1><%= data.candidate.name %></h1>
+    <img class="mug" src="./assets/mugs/<%= data.candidate.mug %>">
+  </div>
   <ul class="q-and-a">
     <% data.questions.forEach(function(q) { %>
-    <li>
-      <%= q.text %>
+    <li class="<%= q.standalone ? "detailed" : "brief" %>">
+      <div class="question"><%= q.text %></div>
       <blockquote><%= data.candidate.questions[q.id] %></blockquote>
     <% }); %>
   </ul>
