@@ -5,6 +5,8 @@ header.splash {
   padding: 80px 60px;
   @stripe-gap: 12px;
   @stripe-width: 1px;
+  @grain-gap: 4px;
+  @grain-width: 1px;
   background-image:
     repeating-linear-gradient(-45deg,
       transparent 0px,
@@ -15,10 +17,10 @@ header.splash {
     ),
     repeating-linear-gradient(80deg,
       transparent 0px,
-      transparent 6px,
-      fade(white, 10%) 6px,
-      fade(white, 10%) 7px,
-      transparent 7px
+      transparent @grain-gap,
+      fade(@st-light-blue, 10%) @grain-gap,
+      fade(@st-light-blue, 10%) @grain-gap + @grain-width,
+      transparent @grain-gap + @grain-width
     ),
     linear-gradient(135deg, @st-dark-blue, darken(@st-dark-blue, 50%));
   // box-shadow: inset 0 0 16px fade(black, 50%);
