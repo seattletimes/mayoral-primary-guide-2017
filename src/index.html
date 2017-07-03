@@ -18,13 +18,20 @@ Object.keys(json.Candidates).forEach(function(k, i) {
 
     <%= t.include("partials/_nav.html") %>
 
-    <%= t.include("partials/_ad.html", { type: "banner" }) %>
+    <!--<%= t.include("partials/_ad.html", { type: "banner" }) %>-->
 
+    <header class="splash">
+      <div class="inner">
+        <h1>Seattle Times mayoral primary guide 2017</h1>
+        <p class="chatter">
+          Make sense of the crowded primary field with our guide to the 21 candidates on the ballot this August.
+        </p>
+        <p class="dateline">Last updated July 3, 2017</p>
+      </div>
+    </header>
+    
     <div class="constraint">
 
-      <header>
-        <h1>Mayoral primary guide</h1>
-      </header>
 
       <main>
         <nav class="tab-group">
