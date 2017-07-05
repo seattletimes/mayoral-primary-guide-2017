@@ -1,0 +1,75 @@
+.candidate-view {
+  .header {
+    .mug {
+      float: right;
+      margin-left: 20px;
+    }
+  }
+
+  ul.questions {
+    clear: both;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+    & > li {
+      margin-bottom: 16px;
+      padding: 0 16px 0 0;
+    }
+
+
+    blockquote {
+      margin: 0;
+    }
+
+    &.multiple-choice {
+      padding: 20px 0;
+      font-size: 16px;
+      font-family: @df-sans;
+      margin: auto;
+      display: block;
+      max-width: 600px;
+
+      & > li {
+        .display-flex();
+        .flex-wrap(nowrap);
+        .justify-content(space-between);
+        .align-items(center);
+        border-top: 1px solid @df-light-gray;
+        padding: 8px 0;
+        margin-bottom: 0;
+      }
+
+      ul.options {
+        list-style-type: none;
+        display: block;
+        text-transform: uppercase;
+        // border-left: 1px solid @df-light-gray;
+
+        li {
+          display: block;
+          color: @df-middle-gray;
+          text-align: right;
+          padding: 2px 8px;
+          border-radius: 4px;
+
+          &.chosen {
+            color: black;
+            font-weight: bold;
+          }
+        }
+      }
+    }
+
+    &.standalone {
+      // margin-top: 40px;
+
+      .question {
+        font-weight: bold;
+        font-style: italic;
+        font-family: @df-sans;
+        font-size: 16px;
+      }
+    }
+  }
+}

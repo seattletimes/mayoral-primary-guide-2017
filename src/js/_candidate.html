@@ -13,7 +13,7 @@
       <div class="question"><%= q.text %></div>
       <ul class="options">
       <% q.choices.split(/,\s*/).forEach(function(a) { %>
-        <li class="<%= data.candidate.questions[q.id].toLowerCase() == a.toLowerCase() ? "chosen" : "" %>">
+        <li class="<%= (data.candidate.questions[q.id] || "").toLowerCase() == a.toLowerCase() ? "chosen" : "" %>">
           <%= a %>
         </li>
       <% }); %>
