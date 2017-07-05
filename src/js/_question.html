@@ -2,7 +2,7 @@
   <nav class="breadcrumb">
     <a href="#/questions">▲ Back to questions</a>
   </nav>
-  <h1><%= data.question %></h1>
+  <h1><%= data.question.text %></h1>
   <ul class="candidate-answers">
     <% data.candidates.forEach(function(c) { %>
     <li>

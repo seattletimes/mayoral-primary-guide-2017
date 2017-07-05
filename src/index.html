@@ -32,7 +32,6 @@ Object.keys(json.Candidates).forEach(function(k, i) {
     
     <div class="constraint">
 
-
       <main>
         <nav class="tab-group">
           <a href="#/candidates" class="candidates active">Candidates</a>
@@ -50,7 +49,7 @@ Object.keys(json.Candidates).forEach(function(k, i) {
 
     <script>
 window.candidateData = <%= JSON.stringify(candidates) %>;
-window.questionData = <%= JSON.stringify(json.Questions) %>;
+window.questionData = <%= JSON.stringify(json.Questions.filter(q => q.category != "removed")) %>;
     </script>
 
     <script src="app.js" async></script>

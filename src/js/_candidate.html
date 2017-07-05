@@ -3,12 +3,27 @@
     <a href="#/candidates">▲ Back to candidates</a>
   </nav>
   <div class="header">
-    <h1><%= data.candidate.name %></h1>
     <img class="mug" src="./assets/mugs/<%= data.candidate.mug %>">
+    <h1><%= data.candidate.name %></h1>
+    <p class="summary"><%= data.candidate.summary %></p>
   </div>
-  <ul class="q-and-a">
-    <% data.questions.forEach(function(q) { %>
-    <li class="<%= q.standalone ? "detailed" : "brief" %>">
+  <ul class="multiple-choice questions">
+    <% data.choice.forEach(function(q) { %>
+    <li>
+      <div class="question"><%= q.text %></div>
+      <ul class="options">
+      <% q.choices.split(/,\s*/).forEach(function(a) { %>
+        <li class="<%= data.candidate.questions[q.id].toLowerCase() == a.toLowerCase() ? "chosen" : "" %>">
+          <%= a %>
+        </li>
+      <% }); %>
+      </ul>
+    <% }); %>
+  </ul>
+  <h2>Policies and plans</h2>
+  <ul class="standalone questions">
+    <% data.detailed.forEach(function(q) { %>
+    <li>
       <div class="question"><%= q.text %></div>
       <blockquote><%= data.candidate.questions[q.id] || "<i>No response given</i>" %></blockquote>
     <% }); %>

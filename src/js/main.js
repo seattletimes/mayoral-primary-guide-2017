@@ -19,7 +19,7 @@ var lookup = {
 };
 
 window.candidateData.forEach(c => lookup.candidate[c.id] = c);
-window.questionData.forEach(q => lookup.question[q.id] = q.text);
+window.questionData.forEach(q => lookup.question[q.id] = q);
 
 var setViewAttr = v => document.body.setAttribute("data-view", v);
 
@@ -33,20 +33,23 @@ router.add("/candidates", function() {
   viewContainer.innerHTML = templates.candidateChooser({ candidates: window.candidateData });
 });
 
-router.add("/questions", function() {
-  setViewAttr("question-list");
-  var questions = window.questionData.filter(q => q.standalone);
-  viewContainer.innerHTML = templates.questionChooser({ questions });
-});
-
 router.add("/candidates/:id", function(e) {
   setViewAttr("candidate");
   var candidate = lookup.candidate[e.params.id];
+  var detailed = window.questionData.filter(q => q.category == "standalone");
+  var choice = window.questionData.filter(q => q.category == "Multiple choice");
   viewContainer.innerHTML = templates.candidate({
     candidate,
-    questions: window.questionData,
+    detailed,
+    choice,
     qLookup: lookup.question
   });
+});
+
+router.add("/questions", function() {
+  setViewAttr("question-list");
+  var questions = window.questionData.filter(q => q.category == "standalone");
+  viewContainer.innerHTML = templates.questionChooser({ questions });
 });
 
 router.add("/question/:id", function(e) {
