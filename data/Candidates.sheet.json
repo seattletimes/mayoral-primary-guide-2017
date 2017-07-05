@@ -62,14 +62,17 @@
   },
   "mcginn": {
     "name": "Mike McGinn",
+    "mug": "mcginn.jpg",
     "summary": "Former mayor unseated in 2013 by Ed Murray. Says he’d review budget, tax big businesses, focus on basics and try to speed up the construction of light rail."
   },
   "moon": {
     "name": "Cary Moon",
+    "mug": "moon.jpg",
     "summary": "Urban planner who led opposition to the Alaskan Way Viaduct replacement tunnel. Calling for a crackdown on real-estate speculators, and helping to fund her own campaign."
   },
   "norton": {
     "name": "James W. Norton Jr.",
+    "mug": "norton.jpg",
     "summary": "Seattle police officer who says there should be more dialogue between cops and community members. Former veterinary technician and owner of a dog-walking business."
   },
   "oberto": {
@@ -93,6 +96,7 @@
   },
   "whiteman": {
     "name": "Keith J. Whiteman",
+    "mug": "whiteman.jpg",
     "summary": "Rock drummer who says he’d listen to experts. Says he’d ban the Confederate flag and tax big businesses."
   }
 }
