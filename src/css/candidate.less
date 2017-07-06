@@ -1,9 +1,16 @@
 .candidate-view {
   .header {
+    overflow: hidden;
+    padding: 0 20px 20px 0;
     .mug {
       float: right;
       margin-left: 20px;
     }
+  }
+
+  h2 {
+    border-top: 3px solid black;
+    clear: both;
   }
 
   ul.questions {
@@ -17,18 +24,29 @@
       padding: 0 16px 0 0;
     }
 
-
     blockquote {
       margin: 0;
+    }
+
+    &.biographical {
+      .display-flex();
+      .flex-wrap(wrap);
+
+      li {
+        .flex(0 0 50%);
+      }
+
+      .question {
+        font-family: @df-sans;
+        font-size: 15px;
+        font-weight: bold;
+      }
     }
 
     &.multiple-choice {
       padding: 20px 0;
       font-size: 16px;
       font-family: @df-sans;
-      margin: auto;
-      display: block;
-      max-width: 600px;
 
       & > li {
         .display-flex();
@@ -52,10 +70,16 @@
           text-align: right;
           padding: 2px 8px;
           border-radius: 4px;
+          white-space: nowrap;
 
           &.chosen {
             color: black;
             font-weight: bold;
+          }
+
+          &.flagged {
+            color: black;
+            font-style: italic;
           }
         }
       }

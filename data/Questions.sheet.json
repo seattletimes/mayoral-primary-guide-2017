@@ -1,51 +1,63 @@
 [
   {
     "id": "name",
-    "text": "What is your full name?"
+    "text": "What is your full name?",
+    "category": "biography"
   },
   {
     "id": "age",
-    "text": "What is your age?"
+    "text": "What is your age?",
+    "category": "biography"
   },
   {
     "id": "neighborhood",
-    "text": "What neighborhood do you live in?"
+    "text": "What neighborhood do you live in?",
+    "category": "biography"
   },
   {
     "id": "job",
-    "text": "What is your occupation?"
+    "text": "What is your occupation?",
+    "category": "biography"
   },
   {
     "id": "income",
-    "text": "What is your annual income?"
+    "text": "What is your annual income?",
+    "category": "biography"
   },
   {
     "id": "family",
-    "text": "Describe your immediate family/household (spouse, children, etc.)?"
+    "text": "Describe your immediate family/household (spouse, children, etc.)?",
+    "category": "biography"
   },
   {
     "id": "rent_own",
-    "text": "Do you rent or own your home? If you own, when were you last a renter?"
+    "text": "Do you rent or own your home? If you own, when were you last a renter?",
+    "category": "biography"
   },
   {
     "id": "time_served",
-    "text": "How long have you lived in Seattle?"
+    "text": "How long have you lived in Seattle?",
+    "category": "biography"
   },
   {
     "id": "education",
-    "text": "Describe your education"
+    "text": "Describe your education",
+    "category": "biography"
   },
   {
     "id": "favorite_transport",
-    "text": "What is your primary mode of transportation?"
+    "text": "What is your primary mode of transportation?",
+    "category": "biography"
   },
   {
     "id": "favorite_seattleite",
-    "text": "Who is your favorite Seattleite past or present?"
+    "text": "Who is your favorite Seattleite past or present?",
+    "category": "biography"
   },
   {
     "id": "favorite_musician",
-    "text": "Favorite musician or music group?"
+    "text": "Favorite musician or music group?",
+    "category": "biography"
   },
   {
     "id": "rent_regulation",
@@ -57,7 +69,7 @@
     "id": "homeless_eviction",
     "text": "Has the city been evicting people from unauthorized homeless encampments too much, too little or just the right amount?",
     "category": "Multiple choice",
-    "choices": "too much, too little, just the right amount"
+    "choices": "too much, too little, just right"
   },
   {
     "id": "more_encampments",
@@ -114,11 +126,13 @@
   },
   {
     "id": "first_cut",
-    "text": "Which city department or office should first have its budget cut, if any?"
+    "text": "Which city department or office should first have its budget cut, if any?",
+    "category": "short answer"
   },
   {
     "id": "first_boost",
-    "text": "Which city department or office should first having its budget increased, if any?"
+    "text": "Which city department or office should first having its budget increased, if any?",
+    "category": "short answer"
   },
   {
     "id": "retain_otoole",
@@ -152,7 +166,8 @@
   },
   {
     "id": "campaign_tweet",
-    "text": "Sum up your campaign in a tweet -- no more than 140 characters"
+    "text": "Sum up your campaign in a tweet -- no more than 140 characters",
+    "category": "short answer"
   },
   {
     "id": "affordable_housing",

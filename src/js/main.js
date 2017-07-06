@@ -36,12 +36,14 @@ router.add("/candidates", function() {
 router.add("/candidates/:id", function(e) {
   setViewAttr("candidate");
   var candidate = lookup.candidate[e.params.id];
-  var detailed = window.questionData.filter(q => q.category == "standalone");
+  var detailed = window.questionData.filter(q => q.category == "standalone" || q.category == "short answer");
   var choice = window.questionData.filter(q => q.category == "Multiple choice");
+  var bio = window.questionData.filter(q => q.category == "biography");
   viewContainer.innerHTML = templates.candidate({
     candidate,
     detailed,
     choice,
+    bio,
     qLookup: lookup.question
   });
 });
