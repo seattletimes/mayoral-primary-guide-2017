@@ -1,18 +1,16 @@
 <div class="question-view">
   <nav class="question-list">
-    <ul>
-      <% data.questions.forEach(function(q) { %>
-      <li>
-        <a href="#/issue/<%= q.id %>"><%= q.issue %></a>
-      <% }); %>
-    </ul>
+    Topics: 
+    <% data.questions.forEach(function(q) { %>
+      <a href="#/issue/<%= q.id %>"><%= q.issue %></a>
+    <% }); %>
   </nav>
   <h1><%= data.question.text %></h1>
   <ul class="candidate-answers">
     <% data.candidates.forEach(function(c) { %>
     <li>
       <a class="meta" href="#/candidates/<%= c.id %>">
-        <img src="./assets/mugs/<%= c.mug %>" class="mug">
+        <img src="./assets/mugs/<%= c.mug || "grump.jpg" %>" class="mug">
         <b class="name"><%= c.name %></b>
       </a>
       <blockquote><%= c.questions[data.id] || "No response" %></blockquote>

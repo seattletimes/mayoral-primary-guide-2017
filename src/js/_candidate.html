@@ -7,39 +7,50 @@
     <h1><%= data.candidate.name %></h1>
     <p class="summary"><%= data.candidate.summary %></p>
   </div>
+  
   <h2>Biography</h2>
   <ul class="biographical questions">
     <% data.bio.forEach(function(q) { %>
-    <% if (!data.candidate.questions[q.id]) return; %>
     <li>
-      <div class="question"><%= q.text %></div>
-      <div class="answer"><%= data.candidate.questions[q.id] %>
+      <div class="padding">
+        <div class="question"><%= q.text %></div>
+        <blockquote><%= data.candidate.questions[q.id] || "Did not answer" %></blockquote>
+      </div>
     <% }); %>
   </ul>
+
   <h2>Multiple choice</h2>
   <ul class="multiple-choice questions">
     <% data.choice.forEach(function(q) { %>
     <li>
-      <div class="question"><%= q.text %></div>
-      <ul class="options">
-      <% if (data.candidate.questions[q.id]) { %>
-      <% q.choices.split(/,\s*/).forEach(function(a) { %>
-        <li class="<%= data.candidate.questions[q.id].toLowerCase() == a.toLowerCase() ? "chosen" : "" %>">
-          <%= a %>
-        </li>
-      <% }); %>
-      <% } else { %>
-        <li class="flagged"> Did not answer
-      <% } %>
-      </ul>
+      <div class="padding">
+        <div class="question"><%= q.text %></div>
+        <ul class="options">
+        <% if (data.candidate.questions[q.id]) { %>
+        <% q.choices.split(/,\s*/).forEach(function(a) { %>
+          <li class="<%= data.candidate.questions[q.id].toLowerCase() == a.toLowerCase() ? "chosen" : "" %>">
+            <%= a %>
+          </li>
+        <% }); %>
+        <% } else { %>
+          <li class="flagged"> Did not answer
+        <% } %>
+        </ul>
+      </div>
     <% }); %>
   </ul>
+  
   <h2>Policies and plans</h2>
   <ul class="standalone questions">
     <% data.detailed.forEach(function(q) { %>
     <li>
-      <div class="question"><%= q.text %></div>
-      <blockquote><%= data.candidate.questions[q.id] || "<i>No response given</i>" %></blockquote>
+      <div class="padding">
+        <a class="question"href="#/issue/<%= q.id %>">
+          <%= q.text %>
+        </a>
+        <blockquote><%= data.candidate.questions[q.id] || "<i>No response given</i>" %></blockquote>
+      </div>
     <% }); %>
   </ul>
+  
 </div>

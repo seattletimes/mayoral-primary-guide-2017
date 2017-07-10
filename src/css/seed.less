@@ -1,6 +1,7 @@
 @import "seattletimes";
 
 @blue: #0578b4;
+
 body {
   font-family: @df-sans;
 }
@@ -44,6 +45,7 @@ header.splash {
     text-align: center;
     color: darken(@st-dark-blue, 50%);
     font-size: 64px;
+    font-family: @df-serif;
   }
 
   .dateline {
@@ -71,41 +73,19 @@ nav.tab-group {
     transition: .2s;
 
     &:visited {
-      color: @df-blue;
+      color: @blue;
     }
 
     &:hover {
-      color: darken(@df-blue, 10%);
+      color: darken(@blue, 10%);
     }
 
     &.active,
     [data-view="candidate"] &.candidates,
     [data-view="question"] &.questions {
       font-weight: bold;
-      border-bottom: 3px solid @df-blue;
+      border-bottom: 3px solid @blue;
     }
-  }
-}
-
-nav.breadcrumb {
-  font-family: @df-sans;
-  display: block;
-  background: @df-blue;
-  font-size: 14px;
-  border-top: 2px solid @df-blue;
-
-  a, a:visited {
-    display: inline-block;
-    padding: 8px;
-    text-transform: uppercase;
-    color: white;
-    background: @df-blue;
-    transition: .2s;
-  }
-
-  a:hover, a:focus {
-    background: darken(@df-blue, 10%);
-    color: white;
   }
 }
 

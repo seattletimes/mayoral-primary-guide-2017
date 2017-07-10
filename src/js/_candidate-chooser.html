@@ -2,7 +2,7 @@
   <% data.candidates.forEach(function(c) { %>
   <div class="candidate">
     <a class="name" href="#/candidates/<%= c.id %>">
-      <img class="mug" src="<%= c.mug ? "./assets/mugs/" + c.mug : "./assets/grump.jpg" %>">
+      <img class="mug" src="./assets/mugs/<%= c.mug || "grump.jpg" %>">
       <%= c.name %>
     </a>
   </div>

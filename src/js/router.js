@@ -17,16 +17,18 @@ Router.prototype = {
   onHashUpdate() {
     var url = this.normalizePath(window.location.hash);
     if (!url) return;
-    this.activateLinks(url);
     for (var i = 0; i < this.routes.length; i++) {
       var route = this.routes[i];
       if (route.re.test(url)) {
         var params = route.parse(url);
         var event = { url, params };
         this.onhit(event);
-        return route.callback(event);
+        route.callback(event);
+        this.activateLinks(url);
+        return;
       }
     }
+    this.activateLinks(url);
     this.onmiss(url);
   },
   // catch-all event handlers
@@ -39,14 +41,12 @@ Router.prototype = {
     var converted = segments.map(function(segment) {
       if (segment[0] == ":") {
         names.push(segment.slice(1).replace(/\?$/, ""));
-        var isOptional = segment[segment.length - 1] == "?";
-        return `${isOptional ? "?" : ""}([^/]+)${isOptional ? "?" : ""}`;
+        return `([^/]+)`;
       }
       return segment;
     });
     var source = converted.join("/");
     var re = new RegExp("^/?" + source + "/?$");
-    console.log(re);
     var parse = function(path) {
       var match = re.exec(path);
       var params = {};

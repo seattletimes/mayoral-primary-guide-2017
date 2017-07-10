@@ -63,6 +63,6 @@ var onIssue = function(e) {
   viewContainer.innerHTML = templates.question({ id, question, questions, candidates });
 };
 
-router.add("/issue/:id?", onIssue);
+router.add("/issue/:id", onIssue);
 
 router.add("/about", e => viewContainer.innerHTML = "This space intentionally left blank.");

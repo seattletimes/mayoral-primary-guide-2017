@@ -29,11 +29,6 @@
     margin: 0;
     padding: 0;
 
-    & > li {
-      margin-bottom: 16px;
-      padding: 0 16px 0 0;
-    }
-
     blockquote {
       margin: 0;
     }
@@ -44,6 +39,10 @@
 
       li {
         .flex(0 0 25%);
+
+        .padding {
+          padding: 0 16px 16px 0;
+        }
       }
 
       .question {
@@ -54,25 +53,28 @@
     }
 
     &.multiple-choice {
-      padding: 20px 0;
       font-size: 16px;
       font-family: @df-sans;
+      padding: 20px 0;
       .display-flex();
       .flex-wrap(wrap);
 
       @media @mobile {
         display: block;
       }
-
+      
       & > li {
         .flex(0 0 50%);
-        .display-flex();
-        .flex-wrap(nowrap);
-        .justify-content(space-between);
-        .align-items(center);
         border-top: 1px solid @df-light-gray;
-        padding: 8px 16px 8px 0;
         margin-bottom: 0;
+
+        .padding {
+          padding: 8px 16px 8px 0;
+          .display-flex();
+          .flex-wrap(nowrap);
+          .justify-content(space-between);
+          .align-items(center);
+        }
       }
 
       .question {
@@ -112,6 +114,10 @@
 
       li {
         display: inline-block;
+
+        .padding {
+          padding: 0 16px 32px 0;
+        }
       }
 
       .question {
