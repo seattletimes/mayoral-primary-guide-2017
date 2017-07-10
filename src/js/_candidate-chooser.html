@@ -1,6 +1,6 @@
 <div class="candidate-chooser">
   <% data.candidates.forEach(function(c) { %>
-  <div class="candidate">
+  <div class="candidate <%= c.dna ? "did-not-answer" : "" %>">
     <a class="name" href="#/candidates/<%= c.id %>">
       <img class="mug" src="./assets/mugs/<%= c.mug || "grump.jpg" %>">
       <%= c.name %>
