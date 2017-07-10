@@ -1,3 +1,6 @@
+require("./lib/ads");
+require("./lib/social");
+
 var $ = require("./lib/qsa");
 var dot = require("./lib/dot");
 
