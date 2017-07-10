@@ -172,56 +172,67 @@
   {
     "id": "affordable_housing",
     "text": "How would you help Seattleites better afford housing and halt displacement?",
-    "category": "standalone"
+    "category": "standalone",
+    "issue": "Housing"
   },
   {
     "id": "upzone_support",
     "text": "Do you support the city's existing Mandatory Housing Affordability upzones plan, and why?",
-    "category": "standalone"
+    "category": "standalone",
+    "issue": "Upzones"
   },
   {
     "id": "denser_housing",
     "text": "Would you allow denser housing in zones now reserved for single-family homes (beyond the city's plan to allow more and larger mother-in-law units and backyard cottages), and why? If so, what would your plan look like?",
-    "category": "standalone"
+    "category": "standalone",
+    "issue": "Density"
   },
   {
     "id": "homeless_budget",
     "text": "Is the approximately $60 million Seattle will spend on homeless services this year too little, too much or just the right amount, and why?",
-    "category": "standalone"
+    "category": "standalone",
+    "issue": "Homelessness"
   },
   {
     "id": "north_precinct",
     "text": "Would you build a new North Precinct police station, and why? If so, what would your plan look like?",
-    "category": "standalone"
+    "category": "standalone",
+    "issue": "Police"
   },
   {
     "id": "public_safety",
     "text": "What is the most important public-safety challenge facing Seattle, and how would you solve it?",
-    "category": "standalone"
+    "category": "standalone",
+    "issue": "Safety"
   },
   {
     "id": "congestion_strategy",
     "text": "Is it possible to make getting around easier before new light-rail stations open in 2021? How would you address congestion, and should the city try to make driving easier or more difficult?",
-    "category": "standalone"
+    "category": "standalone",
+    "issue": "Transportation"
   },
   {
     "id": "taxation_strategy",
     "text": "How, if at all, would you change how Seattleites are taxed, and why?",
-    "category": "standalone"
+    "category": "standalone",
+    "issue": "Taxes"
   },
   {
     "id": "wage_gap",
     "text": "How would you address the gender wage gap in Seattle?",
-    "category": "standalone"
+    "category": "standalone",
+    "issue": "Wage gap"
   },
   {
     "id": "waterfront_strategy",
     "text": "What would you do with the downtown waterfront after the Alaskan Way Viaduct is brought down, and how would you pay for it? How would your plan differ from the city's existing plan, if at all?",
-    "category": "standalone"
+    "category": "standalone",
+    "issue": "Waterfront"
   },
   {
     "id": "misc",
     "text": "What else would you like voters to know about you and what you would do as mayor? (optional)",
-    "category": "standalone"
+    "category": "standalone",
+    "issue": "Bonus"
   }
 ]

@@ -38,13 +38,15 @@ Router.prototype = {
     var names = [];
     var converted = segments.map(function(segment) {
       if (segment[0] == ":") {
-        names.push(segment.slice(1));
-        return `([^/]+)`;
+        names.push(segment.slice(1).replace(/\?$/, ""));
+        var isOptional = segment[segment.length - 1] == "?";
+        return `${isOptional ? "?" : ""}([^/]+)${isOptional ? "?" : ""}`;
       }
       return segment;
     });
     var source = converted.join("/");
     var re = new RegExp("^/?" + source + "/?$");
+    console.log(re);
     var parse = function(path) {
       var match = re.exec(path);
       var params = {};

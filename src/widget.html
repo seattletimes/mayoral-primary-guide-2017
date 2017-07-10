@@ -13,10 +13,10 @@
           <% var c = json.Candidates[name] %>
           <div
             class="mug-container"
-            data-name="<%= name %>"
+            data-name="<%= c.name %>"
             data-summary="<%= c.summary %>"
           >
-            <img src="./assets/grump.jpg" class="mugshot">
+            <img src="./assets/mugs/<%= c.mug %>" class="mugshot">
             <div class="name"><%= c.name %></div>
           </div>
           <% } %>

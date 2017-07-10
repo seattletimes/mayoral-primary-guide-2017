@@ -9,7 +9,7 @@ var details = $.one(".details");
 
 var onClick = function() {
   var name = this.getAttribute("data-name");
-  var mug = "./assets/grump.jpg";
+  var mug = this.querySelector(".mugshot").src;
   var summary = this.getAttribute("data-summary");
   details.innerHTML = `
     <img src="${mug}" class="mug">

@@ -1,13 +1,13 @@
 <div class="candidate-view">
-  <nav class="breadcrumb">
+  <!--<nav class="breadcrumb">
     <a href="#/candidates">▲ Back to candidates</a>
-  </nav>
+  </nav>-->
   <div class="header">
     <img class="mug" src="./assets/mugs/<%= data.candidate.mug %>">
     <h1><%= data.candidate.name %></h1>
     <p class="summary"><%= data.candidate.summary %></p>
   </div>
-  <h2>Biographical information</h2>
+  <h2>Biography</h2>
   <ul class="biographical questions">
     <% data.bio.forEach(function(q) { %>
     <% if (!data.candidate.questions[q.id]) return; %>

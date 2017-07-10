@@ -1,5 +1,10 @@
 @import "seattletimes";
 
+@blue: #0578b4;
+body {
+  font-family: @df-sans;
+}
+
 header.splash {
   background: @df-blue;
   padding: 80px 60px;
@@ -56,6 +61,7 @@ header.splash {
 
 nav.tab-group {
   .display-flex();
+  .justify-content(center);
   font-family: @df-sans;
 
   a {
@@ -105,7 +111,7 @@ nav.breadcrumb {
 
 .mug {
   border-radius: 100%;
-  box-shadow: 0 3px 8px fade(black, 10%), 0 8px 16px fade(black, 12%);
+  // box-shadow: 0 3px 8px fade(black, 10%), 0 8px 16px fade(black, 12%);
 
   &[src*="undefined"] {
     background-color: white;
@@ -122,3 +128,10 @@ nav.breadcrumb {
 @import "candidate-chooser";
 @import "question";
 @import "question-chooser";
+
+.credits {
+  display: block;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}

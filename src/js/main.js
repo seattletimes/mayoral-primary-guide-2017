@@ -10,7 +10,8 @@ var templates = {
   candidate: dot.compile(require("./_candidate.html")),
   candidateChooser: dot.compile(require("./_candidate-chooser.html")),
   question: dot.compile(require("./_question.html")),
-  questionChooser: dot.compile(require("./_question-chooser.html"))
+  questionChooser: dot.compile(require("./_question-chooser.html")),
+  about: require("./_about.html")
 };
 
 var lookup = {
@@ -27,6 +28,11 @@ router.onhit = function(e) {
   var containerBounds = viewContainer.getBoundingClientRect();
   if (containerBounds.top < 0) viewContainer.scrollIntoView();
 }
+
+router.add("/about", function() {
+  setViewAttr("about");
+  viewContainer.innerHTML = templates.about;
+})
 
 router.add("/candidates", function() {
   setViewAttr("candidate-list");
@@ -48,18 +54,15 @@ router.add("/candidates/:id", function(e) {
   });
 });
 
-router.add("/questions", function() {
-  setViewAttr("question-list");
-  var questions = window.questionData.filter(q => q.category == "standalone");
-  viewContainer.innerHTML = templates.questionChooser({ questions });
-});
-
-router.add("/question/:id", function(e) {
+var onIssue = function(e) {
+  var id = e.params.id || "affordable_housing";
   setViewAttr("question");
-  var id = e.params.id;
+  var questions = window.questionData.filter(q => q.category == "standalone");
   var question = lookup.question[id];
   var candidates = window.candidateData;
-  viewContainer.innerHTML = templates.question({ id, question, candidates });
-});
+  viewContainer.innerHTML = templates.question({ id, question, questions, candidates });
+};
+
+router.add("/issue/:id?", onIssue);
 
 router.add("/about", e => viewContainer.innerHTML = "This space intentionally left blank.");

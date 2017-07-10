@@ -1,6 +1,11 @@
 <div class="question-view">
-  <nav class="breadcrumb">
-    <a href="#/questions">▲ Back to questions</a>
+  <nav class="question-list">
+    <ul>
+      <% data.questions.forEach(function(q) { %>
+      <li>
+        <a href="#/issue/<%= q.id %>"><%= q.issue %></a>
+      <% }); %>
+    </ul>
   </nav>
   <h1><%= data.question.text %></h1>
   <ul class="candidate-answers">
