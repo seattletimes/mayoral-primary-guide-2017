@@ -11,6 +11,12 @@
       <p class="summary"><%= data.candidate.summary %></p>
     </div>
   </div>
+
+  <% if (data.dna) { %>
+  <div class="did-not-answer">
+    <%= data.candidate.name %> did not respond to The Seattle Times questionnaire.
+  </div>
+  <% } else { %>
   
   <h2>Biography</h2>
   <ul class="biographical questions">
@@ -56,5 +62,7 @@
       </div>
     <% }); %>
   </ul>
+
+  <% } %>
 
 </div>

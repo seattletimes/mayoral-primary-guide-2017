@@ -46,7 +46,13 @@ router.add("/candidates/:id", function(e) {
   var detailed = window.questionData.filter(q => q.category == "standalone" || q.category == "short answer");
   var choice = window.questionData.filter(q => q.category == "Multiple choice");
   var bio = window.questionData.filter(q => q.category == "biography");
+  //did not answer
+  var dna = Object.keys(candidate.questions)
+    .map(q => candidate.questions[q])
+    .filter(a => a == "Did not answer" ? false : a)
+    .length <= 1;
   viewContainer.innerHTML = templates.candidate({
+    dna,
     candidate,
     detailed,
     choice,
