@@ -3,9 +3,13 @@
     <a href="#/candidates">▲ Back to candidates</a>
   </nav>-->
   <div class="header">
-    <img class="mug" src="./assets/mugs/<%= data.candidate.mug %>">
-    <h1><%= data.candidate.name %></h1>
-    <p class="summary"><%= data.candidate.summary %></p>
+    <div class="mug-container">
+      <img class="mug" src="./assets/mugs/<%= data.candidate.mug || "grump.jpg" %>">
+    </div>
+    <div class="bio-container">
+      <h1><%= data.candidate.name %></h1>
+      <p class="summary"><%= data.candidate.summary %></p>
+    </div>
   </div>
   
   <h2>Biography</h2>
@@ -45,12 +49,12 @@
     <% data.detailed.forEach(function(q) { %>
     <li>
       <div class="padding">
-        <a class="question"href="#/issue/<%= q.id %>">
+        <div class="question" href="#/issue/<%= q.id %>">
           <%= q.text %>
-        </a>
+        </div>
         <blockquote><%= data.candidate.questions[q.id] || "<i>No response given</i>" %></blockquote>
       </div>
     <% }); %>
   </ul>
-  
+
 </div>

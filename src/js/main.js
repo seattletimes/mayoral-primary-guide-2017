@@ -5,6 +5,7 @@ var Router = require("./router");
 var router = new Router();
 
 var viewContainer = $.one(".view-container");
+var navigation = $.one("#navigation");
 
 var templates = {
   candidate: dot.compile(require("./_candidate.html")),
@@ -25,8 +26,8 @@ window.questionData.forEach(q => lookup.question[q.id] = q);
 var setViewAttr = v => document.body.setAttribute("data-view", v);
 
 router.onhit = function(e) {
-  var containerBounds = viewContainer.getBoundingClientRect();
-  if (containerBounds.top < 0) viewContainer.scrollIntoView();
+  var containerBounds = navigation.getBoundingClientRect();
+  if (containerBounds.top < 0) navigation.scrollIntoView();
 }
 
 router.add("/about", function() {
