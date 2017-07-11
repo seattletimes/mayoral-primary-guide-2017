@@ -43,10 +43,10 @@ router.add("/about", function() {
   viewContainer.innerHTML = templates.about;
 });
 
-["/", "/candidates"].forEach(r => router.add(r, function() {
+router.add(["/", "/candidates"], function() {
   setViewAttr("candidate-list");
   viewContainer.innerHTML = templates.candidateChooser({ candidates: window.candidateData });
-}));
+});
 
 router.add("/candidates/:id", function(e) {
   setViewAttr("candidate");
