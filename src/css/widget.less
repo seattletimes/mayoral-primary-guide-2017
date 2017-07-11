@@ -58,5 +58,25 @@
       border-radius: 100%;
       box-shadow: 0 8px 16px fade(black, 20%), 0 4px 4px fade(black, 12%);
     }
+
+    .video-container {
+      position: relative;
+      width: 100%;
+
+      &::before {
+        content: "";
+        display: block;
+        padding-bottom: percentage(9 / 16);
+      }
+
+      iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: none;
+      }
+    }
   }
 }

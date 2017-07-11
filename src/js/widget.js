@@ -11,8 +11,13 @@ var onClick = function() {
   var name = this.getAttribute("data-name");
   var mug = this.querySelector(".mugshot").src;
   var summary = this.getAttribute("data-summary");
+  var video = this.getAttribute("data-video") ? `
+  <div class="video-container">
+    <iframe src="//players.brightcove.net/1509317113/BJvNJNM1g_default/index.html?videoId=${this.getAttribute("data-video")}&autoplay=true" allowfullscreen webkitallowfullscreen mozallowfullscreen></iframe>
+  </div>
+  ` : `<img src="${mug}" class="mug">`;
   details.innerHTML = `
-    <img src="${mug}" class="mug">
+    ${video}
     <h2>${name}</h2>
     <p class="summary">
       ${summary}

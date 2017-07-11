@@ -20,6 +20,32 @@
     h1 {
       font-family: @df-serif;
     }
+
+    .video-container {
+      position: relative;
+      width: 75%;
+      margin: auto;
+      clear: both;
+
+      @media @mobile {
+        width: 100%;
+      }
+
+      &::before {
+        content: "";
+        display: block;
+        padding-bottom: percentage(9 /16);
+      }
+
+      iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: none;
+      }
+    }
   }
 
   h2 {

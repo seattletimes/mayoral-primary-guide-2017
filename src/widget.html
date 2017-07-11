@@ -15,8 +15,9 @@
             class="mug-container"
             data-name="<%= c.name %>"
             data-summary="<%= c.summary %>"
+            data-video="<%= c.video %>"
           >
-            <img src="./assets/mugs/<%= c.mug %>" class="mugshot">
+            <img src="./assets/mugs/<%= c.mug || "grump.jpg" %>" class="mugshot">
             <div class="name"><%= c.name %></div>
           </div>
           <% } %>
