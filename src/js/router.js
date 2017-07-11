@@ -16,7 +16,6 @@ var Router = function() {
 Router.prototype = {
   onHashUpdate() {
     var url = this.normalizePath(window.location.hash);
-    if (!url) return;
     for (var i = 0; i < this.routes.length; i++) {
       var route = this.routes[i];
       if (route.re.test(url)) {
