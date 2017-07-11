@@ -31,12 +31,17 @@ var setViewAttr = v => document.body.setAttribute("data-view", v);
 router.onhit = function(e) {
   var containerBounds = navigation.getBoundingClientRect();
   if (containerBounds.top < 0) navigation.scrollIntoView();
-}
+};
+
+router.onmiss = function(url) {
+  console.log(`No matching route for ${url}, redirecting`);
+  window.location.hash = "#/about";
+};
 
 router.add("/about", function() {
   setViewAttr("about");
   viewContainer.innerHTML = templates.about;
-})
+});
 
 router.add("/candidates", function() {
   setViewAttr("candidate-list");
