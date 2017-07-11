@@ -34,7 +34,9 @@ Object.keys(json.Candidates).forEach(function(k, i) {
         <p>
           Click on the photos to learn more about each candidate, or select "Issues" to compare their answers side by side.
         </p>
-        <p class="dateline">Updated July 10, 2017</p>
+        <% var updated = new Date(); %>
+        <% var months = { 6: "July", 7: "Aug.", 8: "Sep." } %>
+        <p class="dateline">Updated <%= months[updated.getMonth()] %> <%= updated.getDate() %>, 2017</p>
       </div>
     </header>
     
