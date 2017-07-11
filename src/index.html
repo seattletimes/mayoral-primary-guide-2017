@@ -26,13 +26,13 @@ Object.keys(json.Candidates).forEach(function(k, i) {
 
     <header class="splash">
       <div class="inner">
-        <h1>Mayoral Primary Guide 2017</h1>
+        <h1>Meet Seattle's candidates for mayor</h1>
         <p>
-          Welcome to The Seattle Times guide to the Seattle mayor’s race. With 21 candidates on the primary-election ballot, we figured voters could use some help sorting through a field so varied it includes not only politicians, lawyers and activists, but a rock drummer, a police officer, even a sausage maker. 
+          With 21 candidates on the Aug. 1 primary-election ballot, we figured voters could use some help sorting through a field so varied it includes not only politicians, lawyers and activists, but a rock drummer, a police officer, even a sausage maker. 
         </p>
 
         <p>
-          Click on the photos to learn more about each candidate, or select “Questions” to compare their answers side by side.
+          Click on the photos to learn more about each candidate, or select "Issues" to compare their answers side by side.
         </p>
         <p class="dateline">Updated July 10, 2017</p>
       </div>
@@ -45,6 +45,7 @@ Object.keys(json.Candidates).forEach(function(k, i) {
           <a href="#/candidates" class="candidates active">Candidates</a>
           <a href="#/issue/affordable_housing" class="questions">Issues</a>
           <a href="#/about" class="about">About</a>
+          <a href="http://www.seattletimes.com/tag/seattle-mayoral-race/" target="_blank" class="coverage">More coverage</a>
         </nav>
         <div class="view-container">
           <%= t.include("js/_candidate-chooser.html", { data: { candidates }}) %>

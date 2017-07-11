@@ -10,10 +10,10 @@
       <h1><%= data.candidate.name %></h1>
       <p class="summary"><%= data.candidate.summary %></p>
       <p>
-        <a href="http://info.kingcounty.gov/kcelections/candidatesonballot/pamphlet/pamphlet.aspx?cid=2851&eid=8#<%= data.candidate.cid %>">King County voter pamphlet entry</a>
+        <a href="http://info.kingcounty.gov/kcelections/candidatesonballot/pamphlet/pamphlet.aspx?cid=2851&eid=8#<%= data.candidate.cid %>">King County voter-pamphlet entry</a>
       <% if (data.candidate.video) { %>
       <div class="video-container">
-        <iframe src="//players.brightcove.net/1509317113/BJvNJNM1g_default/index.html?videoId=<%= data.candidate.video %>&autoplay=true" allowfullscreen webkitallowfullscreen mozallowfullscreen></iframe>
+        <iframe src="//players.brightcove.net/1509317113/V1eCvUwO2g_default/index.html?videoId=<%= data.candidate.video %>" allowfullscreen webkitallowfullscreen mozallowfullscreen></iframe>
       </div>
       <% } %>
     </div>

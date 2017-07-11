@@ -9,6 +9,7 @@ var details = $.one(".details");
 
 var onClick = function() {
   var name = this.getAttribute("data-name");
+  var id = this.getAttribute("data-id");
   var mug = this.querySelector(".mugshot").src;
   var summary = this.getAttribute("data-summary");
   var video = this.getAttribute("data-video") ? `
@@ -22,7 +23,7 @@ var onClick = function() {
     <p class="summary">
       ${summary}
     <p class="outgoing">
-    <a target="_blank" href="http://info.kingcounty.gov/kcelections/candidatesonballot/pamphlet/pamphlet.aspx?cid=2851&eid=8#<%= cid %>">King County voter pamphlet</a>
+    <a target="_blank" href="http://projects.seattletimes.com/2017/mayoral-primary-guide/#/candidates/${id}">Read more in our full primary guide &raquo;</a>
   `
 };
 

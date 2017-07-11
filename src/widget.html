@@ -7,27 +7,33 @@
   <body>
 
     <responsive-child>
-      <main class="interactive widget">
-        <div class="mugs">
-          <% for (var name in json.Candidates) { %>
-          <% var c = json.Candidates[name] %>
-          <div
-            class="mug-container"
-            data-name="<%= c.name %>"
-            data-summary="<%= c.summary %>"
-            data-video="<%= c.video %>"
-            data-cid="<%= c.cid %>"
-          >
-            <img src="./assets/mugs/<%= c.mug || "grump.jpg" %>" class="mugshot">
-            <div class="name"><%= c.name %></div>
+      <main class="interactive">
+        <div class="widget">
+          <div class="mugs">
+            <% for (var name in json.Candidates) { %>
+            <% var c = json.Candidates[name] %>
+            <div
+              class="mug-container"
+              data-id="<%= name %>"
+              data-name="<%= c.name %>"
+              data-summary="<%= c.summary %>"
+              data-video="<%= c.video %>"
+              data-cid="<%= c.cid %>"
+            >
+              <img src="./assets/mugs/<%= c.mug || "grump.jpg" %>" class="mugshot">
+              <div class="name"><%= c.name %></div>
+            </div>
+            <% } %>
           </div>
-          <% } %>
-        </div>
-        <div class="details">
-          <h1>Just the 21 of us</h1>
+          <div class="details">
+            <h1>Just the 21 of us</h1>
 
-          <p class="chatter">This year's mayoral primary features one of the widest slates ever seen in Seattle. Choose a candidate from the list for more information about them.
-        <div>
+            <p class="chatter">This year's mayoral primary features one of the widest slates ever seen in Seattle. Choose a candidate from the list for more information about them.
+          </div>
+        </div>
+        <!--<div class="outgoing">
+          <a target="_blank" href="http://projects.seattletimes.com/2017/mayoral-primary-guide/">Read our full primary guide &raquo;</a>
+        </div>-->
       </main>
     </responsive-child>
 

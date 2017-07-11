@@ -52,7 +52,7 @@ header.splash {
     // text-transform: uppercase;
     text-align: center;
     color: darken(@st-dark-blue, 50%);
-    font-size: 64px;
+    font-size: 58px;
     font-family: @df-serif;
 
     @media @mobile {
@@ -98,6 +98,10 @@ nav.tab-group {
     [data-view="question"] &.questions {
       font-weight: bold;
       border-bottom: 3px solid @blue;
+    }
+
+    @media @mobile {
+      &.coverage { display: none }
     }
   }
 }
