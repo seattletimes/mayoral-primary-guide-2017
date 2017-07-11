@@ -1,37 +1,37 @@
 [
   {
     "id": "name",
-    "text": "What is your full name?",
+    "text": "Name",
     "category": "biography"
   },
   {
     "id": "age",
-    "text": "What is your age?",
+    "text": "Age",
     "category": "biography"
   },
   {
     "id": "neighborhood",
-    "text": "What neighborhood do you live in?",
+    "text": "Neighborhood",
     "category": "biography"
   },
   {
     "id": "job",
-    "text": "What is your occupation?",
+    "text": "Occupation",
     "category": "biography"
   },
   {
     "id": "income",
-    "text": "What is your annual income?",
+    "text": "Annual Income",
     "category": "biography"
   },
   {
     "id": "family",
-    "text": "Describe your immediate family/household (spouse, children, etc.)?",
+    "text": "Family",
     "category": "biography"
   },
   {
     "id": "rent_own",
-    "text": "Do you rent or own your home? If you own, when were you last a renter?",
+    "text": "Rent or own?",
     "category": "biography"
   },
   {
@@ -41,22 +41,22 @@
   },
   {
     "id": "education",
-    "text": "Describe your education",
+    "text": "Education",
     "category": "biography"
   },
   {
     "id": "favorite_transport",
-    "text": "What is your primary mode of transportation?",
+    "text": "Primary mode of transportation",
     "category": "biography"
   },
   {
     "id": "favorite_seattleite",
-    "text": "Who is your favorite Seattleite past or present?",
+    "text": "Favorite Seattleite past or present",
     "category": "biography"
   },
   {
     "id": "favorite_musician",
-    "text": "Favorite musician or music group?",
+    "text": "Favorite musician or music group",
     "category": "biography"
   },
   {
@@ -125,16 +125,6 @@
     "choices": "yes, no, maybe"
   },
   {
-    "id": "first_cut",
-    "text": "Which city department or office should first have its budget cut, if any?",
-    "category": "short answer"
-  },
-  {
-    "id": "first_boost",
-    "text": "Which city department or office should first having its budget increased, if any?",
-    "category": "short answer"
-  },
-  {
     "id": "retain_otoole",
     "text": "Would you retain Kathleen O'Toole as police chief?",
     "category": "Multiple choice",
@@ -167,6 +157,16 @@
   {
     "id": "campaign_tweet",
     "text": "Sum up your campaign in a tweet -- no more than 140 characters",
+    "category": "short answer"
+  },
+  {
+    "id": "first_cut",
+    "text": "Which city department or office should first have its budget cut, if any?",
+    "category": "short answer"
+  },
+  {
+    "id": "first_boost",
+    "text": "Which city department or office should first having its budget increased, if any?",
     "category": "short answer"
   },
   {

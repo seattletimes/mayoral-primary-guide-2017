@@ -2,111 +2,132 @@
   "brose": {
     "name": "Gary Brose",
     "mug": "brose.jpg",
-    "summary": "Ballard entrepreneur who says city has waged war on cars by remaking roads for buses and bikes. Says small businesses are too burdened with taxes and regulations."
+    "summary": "Ballard entrepreneur who says city has waged war on cars by remaking roads for buses and bikes. Says small businesses are too burdened with taxes and regulations.",
+    "cid": "c2950"
   },
   "carlisle": {
     "name": "Casey Carlisle",
     "mug": "carlisle.jpg",
-    "summary": "Libertarian with military background. Says city leaders have been fiscally irresponsible and other candidates are Ed Murray clones."
+    "summary": "Libertarian with military background. Says city leaders have been fiscally irresponsible and other candidates are Ed Murray clones.",
+    "cid": "c2431"
   },
   "cato": {
     "name": "Tiniell Cato",
     "mug": "cato.jpg",
-    "summary": "Grant-writing and business consultant. Says government discriminates against people based on race and income."
+    "summary": "Grant-writing and business consultant. Says government discriminates against people based on race and income.",
+    "cid": "c2798"
   },
   "durkan": {
     "name": "Jenny Durkan",
     "mug": "durkan.jpg",
     "summary": "Appointed by President Barack Obama, she was the first openly gay U.S. attorney. Has support from old-guard Democrats and business community.",
-    "video": 5501344914001
+    "video": 5501344914001,
+    "cid": "c2718"
   },
   "farrell": {
     "name": "Jessyn Farrell",
     "mug": "farrell.jpg",
     "summary": "Urbanist who resigned from a statehouse seat to focus on her mayoral campaign. Emphasizing her legislative experience and reaching out to other working parents.",
-    "video": 5501347871001
+    "video": 5501347871001,
+    "cid": "c2663"
   },
   "gunn": {
     "name": "Thom Gunn",
     "mug": "gunn.jpg",
-    "summary": "Writer and former Whidbey Island restaurant owner who was once president of the Associated Students of the University of Washington."
+    "summary": "Writer and former Whidbey Island restaurant owner who was once president of the Associated Students of the University of Washington.",
+    "cid": "c2931"
   },
   "harris": {
     "name": "Michael Harris",
     "mug": "harris.jpg",
-    "summary": "Video journalist and wildlife conservationist who ran a trade group for whale-watching businesses. Says city politics have veered too far left."
+    "summary": "Video journalist and wildlife conservationist who ran a trade group for whale-watching businesses. Says city politics have veered too far left.",
+    "cid": "c2901"
   },
   "hamilton": {
     "name": "Greg Hamilton",
     "mug": "hamilton.jpg",
-    "summary": "Owner of a sustainable-agriculture company who served in the military. Says city’s culture is under threat from special interests and identity politics."
+    "summary": "Owner of a sustainable-agriculture company who served in the military. Says city’s culture is under threat from special interests and identity politics.",
+    "cid": "c2781"
   },
   "hasegawa": {
     "name": "Bob Hasegawa",
     "mug": "hasegawa.jpg",
     "summary": "State senator from Beacon Hill is an old-school labor leader who came up through the Teamsters. Says a municipal bank would help with many urban problems.",
-    "video": 5501350697001
+    "video": 5501350697001,
+    "cid": "c2789"
   },
   "jones": {
     "name": "Lewis A. Jones",
     "mug": "jones.jpg",
-    "summary": "Ballard Republican and former commercial fisherman with a tree-topping and lawn-mowing business. Has concerns about health effects of cellphones and says women should be trained to use firearms for safety."
+    "summary": "Ballard Republican and former commercial fisherman with a tree-topping and lawn-mowing business. Has concerns about health effects of cellphones and says women should be trained to use firearms for safety.",
+    "cid": "c2967"
   },
   "kane": {
     "name": "Dave Kane",
-    "summary": "Belltown resident and programmer who customized a DeLorean DMC-12 to look like the car from the “Back to the Future” movies."
+    "summary": "Belltown resident and programmer who customized a DeLorean DMC-12 to look like the car from the “Back to the Future” movies.",
+    "cid": "c2852"
   },
   "lever": {
     "name": "Harley Lever",
     "mug": "lever.jpg",
-    "summary": "Founder of Safe Seattle, a group of residents and business owners with concerns about street homelessness in neighborhoods. Says he’d use technology to improve government."
+    "summary": "Founder of Safe Seattle, a group of residents and business owners with concerns about street homelessness in neighborhoods. Says he’d use technology to improve government.",
+    "cid": "c2706"
   },
   "martin": {
     "name": "Mary J. Martin",
     "mug": "martin.jpg",
-    "summary": "Socialist Workers Party candidate who also ran for governor in 2012 and 2016 and for mayor in 2013. Longtime factory worker."
+    "summary": "Socialist Workers Party candidate who also ran for governor in 2012 and 2016 and for mayor in 2013. Longtime factory worker.",
+    "cid": "c2715"
   },
   "mcginn": {
     "name": "Mike McGinn",
     "mug": "mcginn.jpg",
     "summary": "Former mayor unseated in 2013 by Ed Murray. Says he’d review budget, tax big businesses, focus on basics and try to speed up the construction of light rail.",
-    "video": 5501354786001
+    "video": 5501354786001,
+    "cid": "c2799"
   },
   "moon": {
     "name": "Cary Moon",
     "mug": "moon.jpg",
     "summary": "Urban planner who led opposition to the Alaskan Way Viaduct replacement tunnel. Calling for a crackdown on real-estate speculators, and helping to fund her own campaign.",
-    "video": 5501344145001
+    "video": 5501344145001,
+    "cid": "c2486"
   },
   "norton": {
     "name": "James W. Norton Jr.",
     "mug": "norton.jpg",
-    "summary": "Seattle police officer who says there should be more dialogue between cops and community members. Former veterinary technician and owner of a dog-walking business."
+    "summary": "Seattle police officer who says there should be more dialogue between cops and community members. Former veterinary technician and owner of a dog-walking business.",
+    "cid": "c2423"
   },
   "oberto": {
     "name": "Larry Oberto",
     "mug": "oberto.jpg",
-    "summary": "Member of Seattle’s Oberto Sausage Company family who’s served as sports-marketing director for the company. Has been involved in hydroplane and car racing."
+    "summary": "Member of Seattle’s Oberto Sausage Company family who’s served as sports-marketing director for the company. Has been involved in hydroplane and car racing.",
+    "cid": "c2966"
   },
   "oliver": {
     "name": "Nikkita Oliver",
     "mug": "oliver.jpg",
     "summary": "Educator, attorney, artist and activist. Says she’d fight displacement, halt property-tax hikes and be voice for poor people, young people and people of color.",
-    "video": 5501350704001
+    "video": 5501350704001,
+    "cid": "c2810"
   },
   "roberts": {
     "name": "Jason Roberts",
     "mug": "roberts.jpg",
-    "summary": "Business owner and consultant. Advocates free rehabilitation services for people struggling with drug addiction."
+    "summary": "Business owner and consultant. Advocates free rehabilitation services for people struggling with drug addiction.",
+    "cid": "c2497"
   },
   "tsimerman": {
     "name": "Alex Tsimerman",
     "mug": "tsimerman.jpg",
-    "summary": "Frequent candidate who regularly delivers profane testimony at City Council meetings and rails against fascism."
+    "summary": "Frequent candidate who regularly delivers profane testimony at City Council meetings and rails against fascism.",
+    "cid": "c2513"
   },
   "whiteman": {
     "name": "Keith J. Whiteman",
     "mug": "whiteman.jpg",
-    "summary": "Rock drummer who says he’d listen to experts. Says he’d ban the Confederate flag and tax big businesses."
+    "summary": "Rock drummer who says he’d listen to experts. Says he’d ban the Confederate flag and tax big businesses.",
+    "cid": "c2724"
   }
 }

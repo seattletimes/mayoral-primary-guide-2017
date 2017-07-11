@@ -9,6 +9,8 @@
     <div class="bio-container">
       <h1><%= data.candidate.name %></h1>
       <p class="summary"><%= data.candidate.summary %></p>
+      <p>
+        <a href="http://info.kingcounty.gov/kcelections/candidatesonballot/pamphlet/pamphlet.aspx?cid=2851&eid=8#<%= data.candidate.cid %>">King County voter pamphlet entry</a>
       <% if (data.candidate.video) { %>
       <div class="video-container">
         <iframe src="//players.brightcove.net/1509317113/BJvNJNM1g_default/index.html?videoId=<%= data.candidate.video %>&autoplay=true" allowfullscreen webkitallowfullscreen mozallowfullscreen></iframe>
@@ -23,7 +25,7 @@
   </div>
   <% } else { %>
   
-  <h2>Biography</h2>
+  <h2>Bio</h2>
   <ul class="biographical questions">
     <% data.bio.forEach(function(q) { %>
     <li>
@@ -34,7 +36,7 @@
     <% }); %>
   </ul>
 
-  <h2>Multiple choice</h2>
+  <h2>Quick hits</h2>
   <ul class="multiple-choice questions">
     <% data.choice.forEach(function(q) { %>
     <li>

@@ -21,6 +21,8 @@ var onClick = function() {
     <h2>${name}</h2>
     <p class="summary">
       ${summary}
+    <p class="outgoing">
+    <a target="_blank" href="http://info.kingcounty.gov/kcelections/candidatesonballot/pamphlet/pamphlet.aspx?cid=2851&eid=8#<%= cid %>">King County voter pamphlet</a>
   `
 };
 
