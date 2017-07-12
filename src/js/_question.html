@@ -10,10 +10,10 @@
     <% data.candidates.forEach(function(c) { %>
     <li>
       <a class="meta" href="#/candidates/<%= c.id %>">
-        <img src="./assets/mugs/<%= c.mug || "grump.jpg" %>" class="mug">
+        <img src="./assets/mugs/<%= c.mug || "blank.jpg" %>" class="mug">
         <b class="name"><%= c.name %></b>
       </a>
-      <blockquote><%= c.questions[data.id] || "Did not answer" %></blockquote>
+      <blockquote><%= c.questions[data.id] || "Did not answer." %></blockquote>
     <% }); %>
   </ul>
 </div>

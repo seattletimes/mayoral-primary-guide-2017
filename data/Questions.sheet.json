@@ -2,7 +2,7 @@
   {
     "id": "name",
     "text": "Name",
-    "category": "biography"
+    "category": "removed"
   },
   {
     "id": "age",
@@ -10,8 +10,8 @@
     "category": "biography"
   },
   {
-    "id": "neighborhood",
-    "text": "Neighborhood",
+    "id": "education",
+    "text": "Education",
     "category": "biography"
   },
   {
@@ -30,6 +30,11 @@
     "category": "biography"
   },
   {
+    "id": "neighborhood",
+    "text": "Neighborhood",
+    "category": "biography"
+  },
+  {
     "id": "rent_own",
     "text": "Rent or own?",
     "category": "biography"
@@ -37,11 +42,6 @@
   {
     "id": "time_served",
     "text": "How long have you lived in Seattle?",
-    "category": "biography"
-  },
-  {
-    "id": "education",
-    "text": "Education",
     "category": "biography"
   },
   {
@@ -156,7 +156,7 @@
   },
   {
     "id": "campaign_tweet",
-    "text": "Sum up your campaign in a tweet -- no more than 140 characters",
+    "text": "Sum up your campaign in a tweet &mdash; no more than 140 characters.",
     "category": "short answer"
   },
   {

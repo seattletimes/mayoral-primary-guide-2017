@@ -17,7 +17,7 @@
         <iframe src="//players.brightcove.net/1509317113/V1eCvUwO2g_default/index.html?videoId=<%= data.candidate.video %>" allowfullscreen webkitallowfullscreen mozallowfullscreen></iframe>
       </div>
       <div class="video-caption">
-        We asked each of the leading mayoral candidates to explain &mdash; in less than a minute &mdash; how they are a "typical Seattleite" and how they are "atypical." (Lauren Frohne / The Seattle Times)
+        We asked leading mayoral candidates to explain &mdash; in less than a minute &mdash; how they are a "typical Seattleite" and how they are "atypical." (Lauren Frohne / The Seattle Times)
       </div>
       <% } %>
 
@@ -36,7 +36,7 @@
     <li>
       <div class="padding">
         <div class="question"><%= q.text %></div>
-        <blockquote><%= data.candidate.questions[q.id] || "Did not answer" %></blockquote>
+        <blockquote><%= data.candidate.questions[q.id] || "Did not answer." %></blockquote>
       </div>
     <% }); %>
   </ul>
@@ -55,7 +55,7 @@
           </li>
         <% }); %>
         <% } else { %>
-          <li class="flagged"> Did not answer
+          <li class="flagged"> Did not answer.
         <% } %>
         </ul>
       </div>
