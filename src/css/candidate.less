@@ -4,6 +4,18 @@
     padding: 40px 20px 20px 0;
     font-family: @df-sans;
 
+    .row {
+      .display-flex();
+
+      @media @mobile {
+        display: block;
+      }
+    }
+
+    .mug-padding {
+      padding-right: 10px;
+    }
+
     .mug {
       float: left;
       margin-right: 20px;
