@@ -125,12 +125,6 @@
     "choices": "yes, no, maybe"
   },
   {
-    "id": "retain_otoole",
-    "text": "Would you retain Kathleen O'Toole as police chief?",
-    "category": "Multiple choice",
-    "choices": "yes, no, maybe"
-  },
-  {
     "id": "grow_spd",
     "text": "Should the city continue to grow its number of police officers?",
     "category": "Multiple choice",
@@ -168,6 +162,12 @@
     "id": "first_boost",
     "text": "Which city department or office should first having its budget increased, if any?",
     "category": "short answer"
+  },
+  {
+    "id": "retain_otoole",
+    "text": "Would you retain Kathleen O'Toole as police chief?",
+    "category": "short answer",
+    "choices": "yes, no, maybe"
   },
   {
     "id": "affordable_housing",
