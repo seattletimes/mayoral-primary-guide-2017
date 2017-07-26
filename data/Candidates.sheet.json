@@ -21,7 +21,9 @@
     "mug": "durkan.jpg",
     "summary": "Appointed by President Barack Obama, she was the first openly gay U.S. attorney. Has support from old-guard Democrats and business community.",
     "video": 5501344914001,
-    "cid": "c2718"
+    "cid": "c2718",
+    "profile": "http://www.seattletimes.com/seattle-news/politics/jenny-durkan-showcases-her-experience-in-race-for-seattle-mayor/",
+    "profile_text": "Jenny Durkan draws big-time backers, overt opposition in Seattle mayoral bid"
   },
   "farrell": {
     "name": "Jessyn Farrell",
@@ -87,14 +89,18 @@
     "mug": "mcginn.jpg",
     "summary": "Former mayor unseated in 2013 by Ed Murray. Says he’d review budget, tax big businesses, focus on basics and try to speed up the construction of light rail.",
     "video": 5501354786001,
-    "cid": "c2799"
+    "cid": "c2799",
+    "profile": "http://www.seattletimes.com/seattle-news/politics/mike-mcginn-seeks-second-chance-and-political-upset-in-his-run-for-seattle-mayor/",
+    "profile_text": "Mike McGinn seeks second chance and political upset in his run for Seattle mayor"
   },
   "moon": {
     "name": "Cary Moon",
     "mug": "moon.jpg",
     "summary": "Urban planner who led opposition to the Alaskan Way Viaduct replacement tunnel. Calling for a crackdown on real-estate speculators, and helping to fund her own campaign.",
     "video": 5501344145001,
-    "cid": "c2486"
+    "cid": "c2486",
+    "profile": "http://www.seattletimes.com/seattle-news/politics/in-crowded-seattle-mayoral-race-cary-moons-challenge-is-to-stand-apart/",
+    "profile_text": "Cary Moon offers progressive vision, faces challenge to stand apart in Seattle mayor’s race"
   },
   "norton": {
     "name": "James W. Norton Jr.",
